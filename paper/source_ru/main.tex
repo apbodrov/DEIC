@@ -1,0 +1,175 @@
+% !TEX program = xelatex
+% !BIB program = biber
+%
+% DEIC — центральная эмпирическая статья.
+% Компиляция: xelatex → biber → xelatex → xelatex
+% Или: latexmk -xelatex -interaction=nonstopmode main.tex
+%
+\documentclass[11pt,a4paper]{article}
+
+% === Fonts & Languages ===
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{russian}
+\setotherlanguages{english,sanskrit,greek}
+\setmainfont{DejaVu Serif}[Scale=0.95]  % has Cyrillic; replace with Minion/Brill in production
+\setsansfont{DejaVu Sans}[Scale=0.95]
+\setmonofont{DejaVu Sans Mono}[Scale=0.90]
+
+% === Geometry ===
+\usepackage[a4paper,margin=2.5cm,footskip=1cm]{geometry}
+\usepackage{setspace}
+\setstretch{1.15}
+
+% === Math & Science ===
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+% \usepackage{siunitx}  % not used; enable in production if needed
+
+% === Tables & Graphics ===
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{caption}
+\captionsetup{font=small,labelfont=bf}
+\usepackage{subcaption}
+
+% === Typography ===
+\usepackage{microtype}
+\usepackage{csquotes}
+
+% === Cross-refs & Bibliography ===
+\usepackage[usenames,dvipsnames,x11names]{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    urlcolor=blue!60!black,
+    pdftitle={DEIC: архитектура условного эмпатического сцепления},
+    pdfauthor={DEIC Research Group}
+}
+\usepackage[authoryear,round]{natbib}
+
+% === Section styling ===
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\itshape}{\thesubsubsection}{1em}{}
+
+% === Custom commands ===
+\newcommand{\DEIC}{DEIC}  % DejaVu lacks smallcaps; keep as plain to avoid font fallback
+\newcommand{\EAF}{\ensuremath{E_{\mathrm{AF}}}}
+\newcommand{\Ecog}{\ensuremath{E_{\mathrm{cog}}}}
+\newcommand{\IMM}{\ensuremath{\mathrm{IMM}}}
+
+% === Metadata ===
+\title{Архитектура условного эмпатического сцепления:\\
+\large измерительный каркас \DEIC{} и шести-факторная модель эмпатии, психопатии и внимания}
+\author{Андрей Бодров\thanks{Контакт: \href{mailto:deic.survey@gmail.com}{deic.survey@gmail.com}.}}
+\date{18 апреля 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\noindent
+Психология эмпатии сложилась за столетие как несколько плохо стыкующихся линий: психоанализ защит, теория привязанности, когнитивная нейронаука, клиническая психопатия, созерцательные школы witnessing. Каждая увидела свой фрагмент архитектуры; ни одна не измерила соседние. Мы предлагаем \DEIC{} (\textit{Dynamic Empathy and Inner Conflict}) --- психометрический каркас, в котором конструкты всех этих традиций получают общую координатную систему, позволяющую тестировать их отношения в одной выборке.
+
+\medskip
+\noindent\textbf{(1) Эмпатия --- дефолт, измерять надо её подавление.} Аффективный резонанс --- базовая функция социального мозга; индивидуальные различия --- это не различия в её количестве, а различия в том, как и насколько она блокируется. Модель поэтому измеряет не эмпатию, а механизмы не-эмпатии.
+
+\noindent\textbf{(2) Два независимых канала потери эмпатии.} \emph{Пассивная блокировка} (фактор ID): «не могу чувствовать, даже если хотел бы». \emph{Активное переключение} (фактор P, психопатический паттерн): «могу чувствовать выборочно, когда это мне удобно». На популяционном уровне эти каналы архитектурно ортогональны: психопатический паттерн статистически не связан с ранней детской историей (путь CA$\to$P: $a = +0.015$, ns), что противоречит трактовке психопатии как следствия травмы.
+
+\noindent\textbf{(3) Эмпатию ломает не травма, а защитная реакция на травму.} После учёта защитной структуры прямой эффект детской истории на аффективную эмпатию меняет знак с отрицательного на положительный ($c = -0.129 \to c' = +0.073$). Канал ущерба --- не прошлое, а защита, стоящая между прошлым и настоящим.
+
+\noindent\textbf{(4) Травма не приговор: witnessing переворачивает сценарий.} У людей с высокой травмой \emph{и} высоким уровнем witnessing-функции аффективная эмпатия оказывается самой высокой во всей выборке --- выше, чем у людей без травмы вообще ($n = 118$, 17\%; $\overline{E_{\mathrm{AF}}} = +0.37\,\sigma$). Детская история сама по себе не фиксирует взрослый эмпатический дефицит; она фиксирует его только при нетронутой защитной архитектуре. Там, где развито наблюдающее отношение к собственным состояниям, канал ущерба обратим, и интегрированная травма становится ресурсом эмпатии, а не её препятствием.
+
+\noindent\textbf{(5) Когнитивная и аффективная эмпатия расходятся у психопатов в противоположные стороны.} Когнитивная эмпатия (модель чужого ума) у людей с высоким P \emph{повышена}, аффективная --- снижена (partial $r(\text{P}, E_{\mathrm{cog}}) = +0.32$). «Я понимаю тебя лучше, чем ты сам, но мне всё равно» --- это не сломанная функция, а её конкретная комбинация с моральным нарративом «мне разрешено».
+
+\noindent\textbf{(6) Первичная и вторичная психопатия --- две разные топологии, не степени одной.} Первичная ($n = 144$): холодная условная архитектура без травмы в истории (ID$\approx$0, CA$\approx$0). Вторичная ($n = 65$): та же архитектура, пришедшая через травму, с сохранным внутренним конфликтом (ID$=+0.90$, CA$=+0.98$). Разные клинические входы.
+
+\noindent\textbf{(7) Архитектура формируется в раннем детстве.} Структурные связи между переменными инвариантны в возрастах 14--45; критическое окно формирования закрывается до 14 лет, скорее всего --- до 3.
+
+\noindent\textbf{(8) Внимание (A) --- не содержание психики, а её полевое условие.} Попытка жёсткой рефлексивной факторизации A даёт биполярную структуру: пул «метакогнитивных» айтемов смешивает собственно witnessing (наблюдение без реактивности) и trauma hypervigilance (болезненную гипервнимательность). Эмпирическое основание считать A \emph{формативным композитом}, а не рефлексивным латентом, и мотив для dedicated witnessing-scale в wave 2.
+
+\noindent\textbf{(9) Расширение ACE: «не помню» --- часть конструкта, а не пропуcк.} ACE-айтемы спрашивают о фактах (смерть родителя, домашнее насилие, зависимость в семье). Стандартная операционализация \citep{felitti1998} трактует ответ «не помню / не знаю» как missing data; однако на фактологический вопрос такой ответ в популяционной перспективе указывает либо на семейное замалчивание адверсивной среды, либо на диссоциативный encoding-gap --- обе интерпретации \emph{ACE-релевантны}, а не шумовые. Стандартная кодировка систематически ослабляет сигнал с подконтингента, несущего его сильнее всего. Мы предлагаем кодировать «не помню» численно наравне с «да». Из 1470 респондентов 667 (45.4\%) использовали эту опцию хотя бы раз. Под полным re-fit 6-факторной oblique CFA на alt-кодированных ACE (N~$=$~1468, CFI~$=$~0.960, RMSEA~$=$~0.062) латентная корреляция $r(\text{CA}, \EAF{})$ усиливается с $-0.129$ до $-0.205$ ($+59\%$), суммарный эффект $c = -0.129 \to -0.205$, канонический канал через ID остаётся доминирующим ($-0.236$ [$-0.282, -0.192$]), знаковый flip $c' > 0$ устойчив (§\ref{subsec:ace_extension}). ACE из одномерного счётчика событий становится двухслойным конструктом: явный счёт плюс отдельная ACE-dissociation подшкала.
+
+\noindent\textbf{(10) Декларативно-поведенческая асимметрия (DI) --- архитектурный, а не самопрезентационный сигнал.} Инструмент устроен парными формулировками: каждый содержательный айтем существует в декларативном регистре (trait-описание) и поведенческом (эпизодический self-report за узкое окно). Разрыв $DI = \overline{\text{decl}} - \overline{\text{beh}}$ по 8 сбалансированным шкалам ($N{=}1470$) распределён \emph{разнонаправленно} и не сводится к social desirability: на P --- огромный отрицательный разрыв ($d{=}{-}1.05$, trait-отрицание при поведенческом признании), на E --- большой положительный ($d{=}{+}0.44$, trait-schema превышает эпизодическую память). Величина разрыва сама по себе трекает архитектуру: $r(DI_{overall}, \text{ID}) = {+}0.59$, $r(DI_{overall}, \text{CA}) = {+}0.58$, $r(DI_{overall}, A) = {-}0.52$, $r(DI_{overall}, \text{dx}) \approx 0$. DI структурно отличим от $piz$ (masking+Lie; $r = {+}0.20$; на prosocial-выровненной версии знак переворачивается до $-0.27$) --- два разных слоя самопрезентационной инфраструктуры. Интерпретация: DI маркирует \emph{зазор между trait-level self-schema и episodic-поведенческим self-report}; защитный контур (ID) расширяет его, witnessing (A) сужает, клинический статус с ним не связан (§\ref{subsec:di_asymmetry}).
+
+\noindent\textbf{(11) Архитектура устойчива к мульти-канальной валидации: семь независимых каналов сходятся на одной шестифакторной структуре.} \DEIC{} --- не «ещё один опросник эмпатии», а \emph{operational grammar} для различения архитектурно противоположных конфигураций, дающих одинаковую поверхностную презентацию. Этот тезис подтверждается тем, что одна и та же структура воспроизводится в семи методологически независимых каналах: (i) Likert-латентная 6-факторная oblique CFA с CFI~=~0.950; (ii) network psychometrics с partial $r(\text{P}, \Ecog{}) = +0.32$ после graphical-lasso conditioning; (iii) свободно-текстовое behavioral self-identification (N~=~5 «патологические лжецы» дают $\Delta P = +1.93\,\sigma$); (iv) CASE behavioral-anchor выбор ($N = 358$ P-signature respondents в CASE\_8 дают $\Delta P = +0.92\,\sigma$, $p = 8\times 10^{-46}$); (v) ROC discriminant validity (CA AUC~=~0.69--0.76 для трауматических кластеров, P AUC~$<$~0.5 для всех восьми категорий); (vi) clinical-visibility asymmetry (только 6 из 1470 респондентов используют формулировку «формальный диагноз», но 489 описывают клинический контент в свободном поле; P систематически невидим для multi-dx self-description, $\Delta P = -0.36$, $p = 6\times 10^{-5}$); (vii) трёхпутевая дискриминация одной поверхностной презентации (соматический ответ в psy-поле даёт три различимые архитектурные конфигурации --- Смулевич-блокировка, субпороговая сигнализация, интероцептивный witness). Такая мульти-канальная согласованность редко достижима в personality-instruments и составляет центральный архитектурный аргумент: то, что инструмент измеряет, реально, потому что воспроизводится через семь разных операционализаций (§\ref{subsec:case_convergent}, \ref{subsec:free_text_nlp}, \ref{subsec:dx_asymmetry_trio}).
+
+\medskip
+\noindent Мы позиционируем \DEIC{} не как мета-теорию над созерцательной традицией, а как её \emph{операциональный диалект}: то, что традиция различала без инструментов тысячелетиями, у нас получает координаты, которые можно опровергнуть. К академической психологии работа стоит в конфронтационной позиции --- балканизация микротеорий есть failure mode, не дисциплина. Статья формулирует falsifiable predictions и очерчивает свои границы (cross-sectional, моноязычный, self-report); она --- одна из 18 планируемых работ программы.
+
+\medskip
+\noindent\textit{Технические показатели:} $N = 1426$ русскоязычной онлайн-выборки; six-factor oblique CFA с шестью различимыми факторами (ID, CA, P, M, \EAF{}, \Ecog{}; CFI~=~0.950, RMSEA~=~0.068); conditional process SEM с двухстадийной A-модерацией канала CA$\to$ID$\to$\EAF{} (IMM $= -0.00197$, 95\% CI $[-0.00533, -0.00005]$; $P(\mathrm{IMM} < 0) = 96$--$97\%$ под тремя байесовскими приорами); в unified SEM со всеми путями одновременно $b$-путь ID$\to$\EAF{} коллапсирует (NS), P-путь доминирует ($-0.726$), A-main-effect $+0.393$ --- популяционный вес в \EAF{} несут P-нарратив и witnessing, а не изолированная ID$\times$A-модерация, тогда как ID-каскад остаётся содержательным на case-level.
+
+\medskip
+\noindent\textit{Ключевые слова:} эмпатия; психопатия; диссоциация; witnessing; conditional process; психометрия; созерцательные традиции; интегрированный выживший.
+\end{abstract}
+
+\begin{otherlanguage}{english}
+\begin{abstract}
+\noindent
+The psychology of empathy has developed for over a century as several poorly integrated lines of research: psychoanalytic theories of defense, attachment theory, cognitive neuroscience, the clinical tradition of psychopathy, and contemplative schools of witnessing. Each glimpsed a fragment of the architecture; none measured the adjacent ones. We introduce \DEIC{} (\textit{Dynamic Empathy and Inner Conflict}), a psychometric framework in which constructs from all of these traditions acquire a shared coordinate system, making their relations testable within a single sample.
+
+\medskip
+\noindent\textbf{(1) Empathy is the default; what must be measured is its suppression.} Affective resonance is a baseline function of the social brain; individual differences are not differences in \emph{how much} empathy a person has, but in \emph{how and how strongly} it is blocked. The model therefore measures mechanisms of non-empathy, not empathy as a trait.
+
+\noindent\textbf{(2) Two independent channels of empathy loss.} \emph{Passive blocking} (factor ID): ``I cannot feel even if I want to.'' \emph{Active switching} (factor P, the psychopathic pattern): ``I feel selectively, when it suits me.'' At the population level these channels are architecturally orthogonal: the psychopathic pattern is statistically unrelated to early childhood history (path CA$\to$P: $a = +0.015$, ns), contradicting the common reading of psychopathy as a consequence of trauma.
+
+\noindent\textbf{(3) What breaks empathy is not trauma but the defensive response to trauma.} After partialling out the defensive structure, the direct effect of childhood history on affective empathy \emph{reverses sign}, from negative to positive ($c = -0.129 \to c' = +0.073$). The channel of damage is not the past itself but the defense that stands between past and present.
+
+\noindent\textbf{(4) Trauma is not a verdict: witnessing inverts the script.} Among individuals with high trauma \emph{and} high witnessing, affective empathy is the \emph{highest} in the entire sample --- higher than among those with no trauma at all ($n = 118$, 17\%; $\overline{E_{\mathrm{AF}}} = +0.37\,\sigma$). Childhood history in itself does not fix an adult empathic deficit; it fixes such a deficit only under an intact defensive architecture. Where a witnessing relation to one's own states has developed, the channel of damage becomes reversible, and integrated trauma turns into a resource of empathy rather than its obstacle.
+
+\noindent\textbf{(5) Cognitive and affective empathy diverge in opposite directions under the psychopathic pattern.} Cognitive empathy (modelling of another's mind) is \emph{elevated} in high-P individuals; affective empathy is suppressed (partial $r(\text{P}, E_{\mathrm{cog}}) = +0.32$). ``I understand you better than you understand yourself, and I don't care'' is not a broken function but its specific combination with the moral narrative ``this is allowed for me.''
+
+\noindent\textbf{(6) Primary and secondary psychopathy are two distinct topologies, not degrees of one thing.} Primary ($n = 144$): a cold conditional architecture with no trauma history (ID$\approx$0, CA$\approx$0). Secondary ($n = 65$): the same architecture reached through trauma, with active internal conflict preserved (ID$=+0.90$, CA$=+0.98$). Different clinical entry points.
+
+\noindent\textbf{(7) The architecture forms in early childhood.} Structural relations are invariant across ages 14--45; the critical formation window closes before age 14, most likely before age 3.
+
+\noindent\textbf{(8) Attention (A) is not a content of psyche but its field condition.} Forcing a hard reflective factorization of A yields a bipolar structure: the pool of ``metacognitive'' items confounds witnessing proper (observation without reactivity) with trauma hypervigilance (pathological inner scanning). Empirical grounds for treating A as a \emph{formative composite} rather than a reflective latent, and motivation for a dedicated witnessing-scale in wave 2.
+
+\noindent\textbf{(9) Extending ACE: ``don't remember'' is part of the construct, not a missing value.} ACE items ask about facts (parental death, domestic violence, household substance abuse). Standard operationalization \citep{felitti1998} treats ``don't remember / don't know'' responses as missing data; yet on a factual question such a response points, at the population level, either to family-level silence around an adverse environment or to a dissociative encoding gap --- both \emph{ACE-relevant}, neither noise. The standard coding systematically attenuates the signal from the subgroup that carries it most strongly. We propose coding ``don't remember'' numerically alongside ``yes.'' In the present data, 45.4\% (667/1470) respondents used this option at least once. Under a full 6-factor oblique CFA re-fit on alt-coded ACE items (N~$=$~1468, CFI~$=$~0.960, RMSEA~$=$~0.062), the latent correlation $r(\text{CA}, E_{\mathrm{AF}})$ strengthens from $-0.129$ to $-0.205$ ($+59\%$), the total effect $c = -0.129 \to -0.205$, the canonical ID channel remains dominant ($-0.236$ [$-0.282, -0.192$]), and the sign flip $c'>0$ is preserved (§\ref{subsec:ace_extension}). ACE shifts from a one-dimensional event counter to a two-layered construct: explicit events plus a separate ACE-dissociation subscale.
+
+\noindent\textbf{(10) The declarative-behavioral asymmetry (DI) is an architectural, not a self-presentational signal.} The instrument is built in paired wordings: every content item exists in a declarative register (trait self-description) and a behavioral register (episodic self-report over a narrow window). The gap $DI = \overline{\text{decl}} - \overline{\text{beh}}$ across 8 balanced scales ($N{=}1470$) distributes \emph{heterogeneously} in direction and does not reduce to social desirability: on P the gap is large and negative ($d{=}{-}1.05$, trait-denial paired with behavioral admission); on E it is large and positive ($d{=}{+}0.44$, trait-schema exceeds episodic recall). The magnitude of the gap itself tracks architecture: $r(DI_{overall}, \text{ID}) = {+}0.59$, $r(DI_{overall}, \text{CA}) = {+}0.58$, $r(DI_{overall}, A) = {-}0.52$, $r(DI_{overall}, \text{dx}) \approx 0$. DI is structurally distinct from $piz$ (masking+Lie; $r = {+}0.20$; on the prosocial-aligned version the correlation even flips to $-0.27$) --- two separate layers of self-presentation infrastructure. Interpretation: DI marks the \emph{gap between trait-level self-schema and episodic-behavioral self-report}; the defensive envelope (ID) widens it, witnessing (A) narrows it, and clinical status is uninvolved (§\ref{subsec:di_asymmetry}).
+
+\noindent\textbf{(11) The architecture survives multi-modal validation: seven independent channels converge on the same six-factor structure.} \DEIC{} is not ``one more empathy questionnaire,'' but an \emph{operational grammar} for distinguishing architecturally opposite configurations that produce the same surface presentation. This claim is supported by the same structure reproducing across seven methodologically independent channels: (i) Likert latent 6-factor oblique CFA with CFI~=~0.950; (ii) network psychometrics with partial $r(\text{P}, E_{\mathrm{cog}}) = +0.32$ after graphical-lasso conditioning; (iii) free-text behavioral self-identification ($N = 5$ ``pathological liars'' yield $\Delta P = +1.93\,\sigma$); (iv) CASE behavioral-anchor choice ($N = 358$ P-signature respondents in CASE\_8 yield $\Delta P = +0.92\,\sigma$, $p = 8\times 10^{-46}$); (v) ROC discriminant validity (CA AUC~=~0.69--0.76 for trauma clusters; P AUC~$<$~0.5 for all eight categories); (vi) clinical-visibility asymmetry (only 6 of 1470 respondents use the phrase ``formal diagnosis'' even though 489 describe clinical content in free text; P is systematically invisible to multi-dx self-description, $\Delta P = -0.36$, $p = 6\times 10^{-5}$); (vii) three-path discrimination of a single surface presentation (somatic-only response in a psychiatric field maps onto three distinguishable architectural configurations --- Smulevich-style blocking, subthreshold signaling, and interoceptive witnessing). Such multi-channel coherence is rarely achievable in personality instruments and constitutes the central architectural argument: what the instrument measures is real because it reproduces across seven different operationalizations (§\ref{subsec:case_convergent}, \ref{subsec:free_text_nlp}, \ref{subsec:dx_asymmetry_trio}).
+
+\medskip
+\noindent We position \DEIC{} not as a meta-theory above the contemplative tradition but as its \emph{operational dialect}: what the tradition has distinguished without instruments for millennia here receives coordinates that can be falsified. In relation to academic psychology the work stands in a confrontational position --- the Balkanization of micro-theories is a failure mode, not a discipline. The paper formulates falsifiable predictions and states its boundaries (cross-sectional, monolingual, self-report); it is one of 18 planned papers in the research program.
+
+\medskip
+\noindent\textit{Technical indices:} $N = 1426$ Russian-language online sample; six-factor oblique CFA with six distinguishable factors (ID, CA, P, M, $E_{\mathrm{AF}}$, $E_{\mathrm{cog}}$; CFI~=~0.950, RMSEA~=~0.068); conditional process SEM yields two-stage A-moderation of the CA$\to$ID$\to E_{\mathrm{AF}}$ channel (IMM $= -0.00197$, 95\% CI $[-0.00533, -0.00005]$; $P(\mathrm{IMM} < 0) = 96$--$97\%$ across three Bayesian priors); in a unified SEM with all paths estimated simultaneously the $b$-path ID$\to E_{\mathrm{AF}}$ collapses (NS), the P-path dominates ($-0.726$), A-main-effect is $+0.393$ --- population-level weight in $E_{\mathrm{AF}}$ is carried by the P-narrative and witnessing rather than by the isolated ID$\times$A moderation, while the ID cascade remains substantively real at case level.
+
+\medskip
+\noindent\textit{Keywords:} empathy; psychopathy; dissociation; witnessing; conditional process; psychometrics; contemplative traditions; integrated survivor.
+\end{abstract}
+\end{otherlanguage}
+
+\clearpage
+\tableofcontents
+\clearpage
+
+\input{sections/00_guide}
+\input{sections/00_glossary}
+\input{sections/01_introduction}
+\input{sections/02_methods}
+\input{sections/03_results}
+\input{sections/04_discussion}
+\input{sections/05_falsification}
+\input{sections/06_limitations}
+\input{sections/07_future_work}
+
+\bibliographystyle{plainnat}
+\bibliography{refs}
+
+\input{sections/supplementary}
+
+\end{document}

@@ -1,0 +1,105 @@
+% !TEX program = xelatex
+% !BIB program = bibtex
+%
+% DEIC — central empirical article (English parallel).
+% Compile: xelatex → bibtex → xelatex → xelatex
+%
+\documentclass[11pt,a4paper]{article}
+
+% === Fonts & Languages ===
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{english}
+\setotherlanguages{russian,sanskrit,greek}
+\setmainfont{DejaVu Serif}[Scale=0.95]
+\setsansfont{DejaVu Sans}[Scale=0.95]
+\setmonofont{DejaVu Sans Mono}[Scale=0.90]
+
+% === Geometry ===
+\usepackage[a4paper,margin=2.5cm,footskip=1cm]{geometry}
+\usepackage{setspace}
+\setstretch{1.15}
+
+% === Math & Science ===
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+% === Tables & Graphics ===
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelfont=bf}
+\usepackage{subcaption}
+
+% === Typography ===
+\usepackage{microtype}
+\usepackage{csquotes}
+
+% === Cross-refs & Bibliography ===
+\usepackage[usenames,dvipsnames,x11names]{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    urlcolor=blue!60!black,
+    pdftitle={DEIC: architecture of conditional empathic coupling},
+    pdfauthor={I. Bodrov et al.}
+}
+\usepackage[authoryear,round]{natbib}
+
+% === Section styling ===
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\itshape}{\thesubsubsection}{1em}{}
+
+% === Custom commands ===
+\newcommand{\DEIC}{DEIC}
+\newcommand{\EAF}{$E_{\mathrm{AF}}$}
+\newcommand{\Ecog}{$E_{\mathrm{cog}}$}
+\newcommand{\IMM}{\ensuremath{\mathrm{IMM}}}
+
+% === Metadata ===
+\title{Architecture of Conditional Empathic Coupling:\\
+\large the \DEIC{} measurement framework and a six-factor model of empathy, psychopathy, and attention}
+\author{Andrey Bodrov\thanks{Contact: \href{mailto:deic.survey@gmail.com}{deic.survey@gmail.com}.}}
+\date{April 19, 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\noindent
+The psychology of empathy has developed for over a century as several poorly integrated lines of research: psychoanalytic theories of defense, attachment theory, cognitive neuroscience, the clinical tradition of psychopathy, and contemplative schools of witnessing. Each glimpsed a fragment of the architecture; none measured the adjacent ones. We introduce \DEIC{} (\textit{Dynamic Empathy and Inner Conflict}), a psychometric measurement framework in which constructs from all of the above traditions acquire a shared coordinate system, making their mutual relations testable within a single sample. In a Russian-language online sample ($N = 1426$), a six-factor oblique CFA validates six distinguishable factors (ID, CA, P, M, $E_{\mathrm{AF}}$, $E_{\mathrm{cog}}$; CFI~=~0.950, RMSEA~=~0.068). A seventh construct --- attention (A), a formative composite reflecting the witnessing function --- enters the conditional process SEM as a moderator. Key findings: \textbf{(1)}~$E_{\mathrm{AF}}$ and $E_{\mathrm{cog}}$ are psychometrically separable; partial $r$(P, $E_{\mathrm{cog}}$) = $+0.32$, supporting the hyper-instrumentation hypothesis in the psychopathic pattern. \textbf{(2)}~Parallel mediation of CA $\to$ \{ID, P, M\} $\to$ $E_{\mathrm{AF}}$ shows the P channel is empty at the population level (CA$\to$P $\approx 0$), making P architecturally orthogonal to childhood history rather than its adaptive consequence. \textbf{(3)}~A narrow conditional process SEM (without P in the $b$ equation) reveals a significant two-stage A-moderation of the CA$\to$ID$\to E_{\mathrm{AF}}$ channel (IMM $= -0.00197$, 95\% CI $[-0.00533, -0.00005]$; $P(\mathrm{IMM} < 0) = 96$--$97\%$ across three Bayesian priors). \textbf{(4)}~In a unified SEM with all paths estimated simultaneously, the $b$-path ID$\to E_{\mathrm{AF}}$ collapses (NS) while P$\to E_{\mathrm{AF}}$ dominates ($-0.726$); this does not overturn the previous findings but restructures them: the ID cascade remains real at case level, but the population-level weight in $E_{\mathrm{AF}}$ is carried by the P-narrative and A as main effect ($+0.393$). \textbf{(5) Trauma is not a verdict.}~The integrated-survivor profile (hi-CA $\times$ hi-A, $n = 118$, 17\%) has the \emph{highest} $E_{\mathrm{AF}}$ in the sample. Childhood history in itself does not fix an adult empathic deficit; it fixes such a deficit only under an intact defensive architecture. Where a witnessing relation to one's own states is present, integrated trauma becomes a resource of empathy rather than its obstacle. \textbf{(6)}~Primary and secondary psychopathy are topologically distinguishable via ID and CA (primary: $n = 144$, ID $\approx 0$, CA $\approx 0$; secondary: $n = 65$, ID $= +0.90$, CA $= +0.98$). \textbf{(7)}~A is valid in the current instrument as a formative composite but not as a reflective latent: A-CFA yields bipolar loadings, and substituting the latent A into the SEM flips the signs of key coefficients --- empirical grounds for treating A as formative and motivating a dedicated A-scale in wave 2. \textbf{(8) Architecture survives multi-modal validation.} The same six-factor structure reproduces across seven methodologically independent channels: latent CFA, network psychometrics (partial $r(\text{P}, E_{\mathrm{cog}}) = +0.32$), free-text behavioral self-identification ($N = 5$ self-described ``pathological liars'' yield $\Delta P = +1.93\,\sigma$), CASE behavioral-anchor choice ($N = 358$ P-signature responders give $\Delta P = +0.92\,\sigma$, $p = 8\times 10^{-46}$), ROC discriminant validity (P AUC $< 0.5$ across all eight diagnostic categories), clinical-visibility asymmetry (only 6 of 1470 use ``formal diagnosis'' even though 489 describe clinical content), and three-path discrimination of somatic-only presentation (Smulevich-blocking, subthreshold-signaling, interoceptive-witness). Such multi-channel coherence is rarely achievable in personality instruments; \DEIC{} is best read not as ``one more empathy questionnaire'' but as an \emph{operational grammar} for distinguishing architecturally opposite configurations producing the same surface presentation. We position \DEIC{} as an \emph{operational dialect} of what the contemplative tradition has distinguished without instruments, directed against the fragmentation of academic psychology --- not as a master-map placed over those schools. The paper formulates falsifiable predictions and states its boundaries (cross-sectional, monolingual, self-report) as part of a planned 18-paper program.
+
+\medskip
+\noindent\textit{Keywords:} empathy; psychopathy; dissociation; witnessing; conditional process; psychometrics; contemplative traditions; integrated survivor.
+\end{abstract}
+
+\clearpage
+\tableofcontents
+\clearpage
+
+\input{sections/00_guide}
+\input{sections/00_glossary}
+\input{sections/01_introduction}
+\input{sections/02_methods}
+\input{sections/03_results}
+\input{sections/04_discussion}
+\input{sections/05_falsification}
+\input{sections/06_limitations}
+\input{sections/07_future_work}
+
+\input{sections/supplementary}
+
+\bibliographystyle{plainnat}
+\bibliography{refs}
+
+\end{document}

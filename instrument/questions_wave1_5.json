@@ -1,0 +1,3927 @@
+{
+  "metadata": {
+    "source": "rebuilt_from_excel_and_json_update",
+    "total_questions": 156,
+    "generated_at": "2025-06-26T08:08:55.302416Z",
+    "scale_mapping_to_full_name": {
+      "S": "Suppression",
+      "D": "Dissociation",
+      "E": "Empathy",
+      "P": "Psychopathy",
+      "IDS": "Internal Dissonance",
+      "AIS": "Affective Isolation Scale",
+      "EC": "Emotional Climate",
+      "MS": "Masking",
+      "ADI": "Affective Disruption Index",
+      "CA": "Childhood Alienation",
+      "ACE": "ACE",
+      "F": "Flattening"
+    },
+    "wave_1_5_extension": {
+      "date": "2026-04-25",
+      "items_added": 25,
+      "modules": [
+        "BUL",
+        "THX",
+        "ATT",
+        "LOSS",
+        "NET",
+        "SLEEP"
+      ],
+      "description": "Bullying, therapy, attachment, loss, attention-economy, somatic-D modules added; declarative/behavioral split preserved."
+    },
+    "wave2_trim_candidates": [
+      "AIS_2",
+      "AIS_new_4",
+      "IDS_new_2",
+      "IDS_new_8",
+      "MS_new_3",
+      "S_new_3"
+    ],
+    "active_questions": 147
+  },
+  "questions": [
+    {
+      "id": "S_1",
+      "original_id": "1",
+      "primary_scale": "Suppression",
+      "text": "Я стараюсь не показывать, что чувствую",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 1,
+        "Dissociation": 0,
+        "Empathy": 0.3,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.1,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0.2,
+        "Masking": 0.4,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0
+      },
+      "reverse": false,
+      "disabled": true,
+      "text_en": "I try not to show what I feel."
+    },
+    {
+      "id": "S_2",
+      "original_id": "2",
+      "primary_scale": "Suppression",
+      "text": "Мне трудно выражать эмоции даже близким",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 1,
+        "Dissociation": 0,
+        "Empathy": 0.3,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.1,
+        "AffectiveIsolationScale": 0.2,
+        "EmotionalClimate": 0.3,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0
+      },
+      "reverse": false,
+      "disabled": true,
+      "text_en": "I find it hard to express emotions even to those close to me."
+    },
+    {
+      "id": "S_3",
+      "original_id": "3",
+      "primary_scale": "Suppression",
+      "text": "Я часто скрываю, что мне обидно или больно",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 1,
+        "Dissociation": 0,
+        "Empathy": 0.4,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.4,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0.3,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0.2,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.3
+      },
+      "reverse": false,
+      "disabled": true,
+      "text_en": "I often hide that I am hurt or wounded."
+    },
+    {
+      "id": "S_4",
+      "original_id": "4",
+      "primary_scale": "Suppression",
+      "text": "Мне легче справляться с эмоциями, если не делюсь ими",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 1,
+        "Dissociation": 0,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0.2,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.2
+      },
+      "reverse": false,
+      "disabled": true,
+      "text_en": "It is easier for me to cope with emotions if I don't share them."
+    },
+    {
+      "id": "S_5",
+      "original_id": "5",
+      "primary_scale": "Suppression",
+      "text": "Я почти никогда не говорю, что мне плохо",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 1,
+        "Dissociation": 0,
+        "Empathy": 0.3,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.2,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0.3,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.2,
+        "Lie": 0.3
+      },
+      "reverse": false,
+      "disabled": false,
+      "text_en": "I almost never say when I feel bad."
+    },
+    {
+      "id": "D_1",
+      "original_id": "1",
+      "primary_scale": "Dissociation",
+      "text": "Я иногда ощущаю, что наблюдаю за собой с стороны",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.5,
+        "Dissociation": 1,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 1,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.3
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "At times I feel as if I am observing myself from the outside."
+    },
+    {
+      "id": "D_2",
+      "original_id": "2",
+      "primary_scale": "Dissociation",
+      "text": "У меня бывают провалы в памяти, когда не могу вспомнить, что делал",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.5,
+        "Dissociation": 1,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 1,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Attention": -0.3
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I have memory gaps when I cannot recall what I was doing."
+    },
+    {
+      "id": "D_3",
+      "original_id": "3",
+      "primary_scale": "Dissociation",
+      "text": "Иногда я чувствую, как будто всё происходит как во сне",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 1,
+        "Dissociation": 1,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 1,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.2,
+        "Attention": -0.2
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "Sometimes I feel as if everything is happening in a dream."
+    },
+    {
+      "id": "D_4",
+      "original_id": "4",
+      "primary_scale": "Dissociation",
+      "text": "В моменты сильных эмоций я будто 'отключаюсь'",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.5,
+        "Dissociation": 1,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 1,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0.3,
+        "ChildhoodAlienation": 0,
+        "ACE": 0
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "In moments of intense emotion I seem to 'switch off'."
+    },
+    {
+      "id": "D_5",
+      "original_id": "5",
+      "primary_scale": "Dissociation",
+      "text": "Мне трудно вспомнить, что я чувствовал в важный момент",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 1,
+        "Dissociation": 1,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 1,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0.2,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Attention": -0.3,
+        "Flattening": 0.3
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I find it hard to remember what I felt in an important moment."
+    },
+    {
+      "id": "E_1",
+      "original_id": "1",
+      "primary_scale": "Empathy",
+      "text": "Я замечаю, когда другому плохо, даже если он это не говорит",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0,
+        "Empathy": 1,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0.1,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Attention": 0.3
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I notice when another person feels bad, even if they don't say so."
+    },
+    {
+      "id": "E_2",
+      "original_id": "2",
+      "primary_scale": "Empathy",
+      "text": "Я могу сочувствовать человеку, даже если он мне неприятен",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.1,
+        "Dissociation": 0,
+        "Empathy": 1,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.2,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I can feel compassion for a person even when I dislike them."
+    },
+    {
+      "id": "E_3",
+      "original_id": "3",
+      "primary_scale": "Empathy",
+      "text": "Мне больно видеть, как страдают другие",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0,
+        "Empathy": 1,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.2,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0.2,
+        "ChildhoodAlienation": 0,
+        "ACE": 0
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "It hurts me to see others suffer."
+    },
+    {
+      "id": "E_4",
+      "original_id": "4",
+      "primary_scale": "Empathy",
+      "text": "Я часто угадываю, что чувствуют люди",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0,
+        "Empathy": 1,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0.2,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Attention": 0.4
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I often sense what other people feel."
+    },
+    {
+      "id": "E_5",
+      "original_id": "5",
+      "primary_scale": "Empathy",
+      "text": "Я переживаю за других, даже если не знаю их лично",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": -0.1,
+        "Dissociation": 0,
+        "Empathy": 1,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0.2,
+        "ChildhoodAlienation": 0,
+        "ACE": 0
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I worry about others even when I do not know them personally."
+    },
+    {
+      "id": "P_1",
+      "original_id": "1",
+      "primary_scale": "Psychopathy",
+      "text": "Я не чувствую вины, если сделал что-то ради своей выгоды",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0,
+        "Empathy": -0.3,
+        "Psychopathy": 1,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Lie": 0.3
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I do not feel guilt when I have done something for my own benefit."
+    },
+    {
+      "id": "P_2",
+      "original_id": "2",
+      "primary_scale": "Psychopathy",
+      "text": "Мне легко манипулировать другими, если это нужно",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.4,
+        "Dissociation": 0,
+        "Empathy": 0,
+        "Psychopathy": 1,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0.4,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "It is easy for me to manipulate others when needed."
+    },
+    {
+      "id": "P_3",
+      "original_id": "3",
+      "primary_scale": "Psychopathy",
+      "text": "Я не склонен ставить чужие интересы выше своих",
+      "category": "классика",
+      "weight": 0.7,
+      "weights": {
+        "Suppression": 1,
+        "Dissociation": 0,
+        "Empathy": -0.4,
+        "Psychopathy": 1,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0
+      },
+      "reverse": false,
+      "disabled": false,
+      "text_en": "I am not inclined to place others' interests above my own."
+    },
+    {
+      "id": "P_4",
+      "original_id": "4",
+      "primary_scale": "Psychopathy",
+      "text": "Если кто-то пострадал из-за меня — это его проблема",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 1,
+        "Dissociation": 0,
+        "Empathy": -0.5,
+        "Psychopathy": 1,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0.2,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0
+      },
+      "reverse": false,
+      "disabled": false,
+      "text_en": "If someone suffered because of me, that is their problem."
+    },
+    {
+      "id": "P_5",
+      "original_id": "5",
+      "primary_scale": "Psychopathy",
+      "text": "Я считаю, что слабые заслуживают меньше",
+      "category": "классика",
+      "weight": 1.2,
+      "weights": {
+        "Suppression": 1,
+        "Dissociation": 0,
+        "Empathy": 0,
+        "Psychopathy": 1,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": -0.2,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0
+      },
+      "reverse": false,
+      "disabled": false,
+      "text_en": "I think the weak deserve less."
+    },
+    {
+      "id": "IDS_1",
+      "original_id": "1",
+      "primary_scale": "Internal Dissonance",
+      "text": "Я часто делаю \"как надо\", даже если внутри чувствую иначе",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 1,
+        "Dissociation": 0,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0.3,
+        "AffectiveDisruptionIndex": 0.2,
+        "ChildhoodAlienation": 0,
+        "ACE": 0
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I often do what is 'expected', even if I feel differently inside."
+    },
+    {
+      "id": "IDS_2",
+      "original_id": "2",
+      "primary_scale": "Internal Dissonance",
+      "text": "Мне трудно отличить свои желания от чужих ожиданий",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 1,
+        "Dissociation": 0.2,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.2
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I find it hard to tell my own desires from others' expectations."
+    },
+    {
+      "id": "IDS_3",
+      "original_id": "3",
+      "primary_scale": "Internal Dissonance",
+      "text": "Иногда я живу 'по плану', который на самом деле мне не близок",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.3,
+        "Dissociation": 0,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0.2,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "At times I live 'on a plan' that is not really mine."
+    },
+    {
+      "id": "IDS_4",
+      "original_id": "4",
+      "primary_scale": "Internal Dissonance",
+      "text": "Я часто сомневаюсь: это я хочу — или 'так правильно'?",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 1,
+        "Dissociation": 0,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Attention": 0.3,
+        "Flattening": 0.2
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I often wonder: is this what I want, or what is 'correct'?"
+    },
+    {
+      "id": "IDS_5",
+      "original_id": "5",
+      "primary_scale": "Flattening",
+      "text": "Бывает, я чувствую себя 'не на своём месте', хотя всё вроде нормально",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.2,
+        "Dissociation": 0.25,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.3,
+        "AffectiveIsolationScale": 0.3,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "Sometimes I feel 'out of place' even when everything seems fine."
+    },
+    {
+      "id": "AIS_1",
+      "original_id": "1",
+      "primary_scale": "Flattening",
+      "text": "Я давно не чувствовал ни восторга, ни боли — только 'надо сделать'",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.3,
+        "Dissociation": 0.25,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.25,
+        "AffectiveIsolationScale": 0.25,
+        "EmotionalClimate": 0.2,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "It has been a long time since I felt real delight or real pain—only 'I have to'."
+    },
+    {
+      "id": "AIS_2",
+      "original_id": "2",
+      "primary_scale": "Flattening",
+      "text": "Мне трудно вспомнить, когда я в последний раз что-то переживал по-настоящему",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.3,
+        "Dissociation": 0.25,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.25,
+        "AffectiveIsolationScale": 0.25,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Attention": -0.2
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I find it hard to remember when I last genuinely felt something.",
+      "wave2_trim_candidate": true,
+      "wave2_trim_reason": "max_abs=0.272, redundant with AIS_1"
+    },
+    {
+      "id": "AIS_3",
+      "original_id": "3",
+      "primary_scale": "Flattening",
+      "text": "Я часто действую без особых эмоций — просто потому что нужно",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.2,
+        "Dissociation": 0.25,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.25,
+        "AffectiveIsolationScale": 0.25,
+        "EmotionalClimate": 0,
+        "Masking": 0.2,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0
+      },
+      "reverse": false,
+      "disabled": true,
+      "text_en": "I often act without much emotion—just because I have to."
+    },
+    {
+      "id": "AIS_4",
+      "original_id": "4",
+      "primary_scale": "Flattening",
+      "text": "Чувства стали фоном, как будто отключены",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.3,
+        "Dissociation": 0.25,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.25,
+        "AffectiveIsolationScale": 0.25,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0.3,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 1
+      },
+      "reverse": false,
+      "disabled": true,
+      "text_en": "Feelings have become background, as if switched off."
+    },
+    {
+      "id": "AIS_5",
+      "original_id": "5",
+      "primary_scale": "Affective Isolation Scale",
+      "text": "Я могу быть рядом, но не чувствовать связи",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.5,
+        "Dissociation": 0.6,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.5,
+        "AffectiveIsolationScale": 1,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.2
+      },
+      "reverse": false,
+      "disabled": true,
+      "text_en": "I can be with someone and not feel a connection."
+    },
+    {
+      "id": "EC_1",
+      "original_id": "1",
+      "primary_scale": "Emotional Climate",
+      "text": "В детстве ошибки воспринимались как повод для критики",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.3,
+        "Dissociation": 0,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0.2,
+        "EmotionalClimate": 1,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 1
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "In childhood, mistakes were treated as grounds for criticism."
+    },
+    {
+      "id": "EC_2",
+      "original_id": "2",
+      "primary_scale": "Emotional Climate",
+      "text": "Меня учили 'не чувствовать глупости'",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.5,
+        "Dissociation": 0,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 1,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 1,
+        "Flattening": 0.3
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I was taught 'not to feel silly things'."
+    },
+    {
+      "id": "EC_3",
+      "original_id": "3",
+      "primary_scale": "Emotional Climate",
+      "text": "Проявление эмоций считалось слабостью",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.6,
+        "Dissociation": 0,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.2,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 1,
+        "Masking": 0.4,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 1
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "Showing emotions was considered weakness."
+    },
+    {
+      "id": "EC_4",
+      "original_id": "4",
+      "primary_scale": "Emotional Climate",
+      "text": "Если я расстраивался — мне говорили 'не драматизируй'",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.4,
+        "Dissociation": 0.2,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 1,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0.3,
+        "ChildhoodAlienation": 0,
+        "ACE": 1
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "When I was upset, I was told 'don't be dramatic'."
+    },
+    {
+      "id": "EC_5",
+      "original_id": "5",
+      "primary_scale": "Emotional Climate",
+      "text": "Меня больше хвалили за сдержанность, чем за искренность",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.5,
+        "Dissociation": 0,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.2,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 1,
+        "Masking": 0.3,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 1
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I was praised more for restraint than for sincerity."
+    },
+    {
+      "id": "MS_2",
+      "original_id": "2",
+      "primary_scale": "Masking",
+      "text": "Мне говорят, что я очень собранный и эмоционально устойчивый",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.2,
+        "Dissociation": 0,
+        "Empathy": 0,
+        "Psychopathy": 0.5,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 1,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.3
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "People tell me I am very composed and emotionally stable."
+    },
+    {
+      "id": "MS_3",
+      "original_id": "3",
+      "primary_scale": "Masking",
+      "text": "Я никогда не теряю самообладания — даже внутри",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.5,
+        "Dissociation": 0.3,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.4,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 1,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.2
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I never lose my composure—even inside."
+    },
+    {
+      "id": "MS_4",
+      "original_id": "4",
+      "primary_scale": "Masking",
+      "text": "Я чувствую себя хорошо почти всегда",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0,
+        "Empathy": 0,
+        "Psychopathy": 0.3,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 1,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Lie": 0.4,
+        "Flattening": 0.3
+      },
+      "reverse": false,
+      "text_en": "I feel well almost all the time."
+    },
+    {
+      "id": "ADI_1",
+      "original_id": "1",
+      "primary_scale": "Affective Disruption Index",
+      "text": "Иногда мне сложно различить: устал ли я или просто 'выключен'",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 1,
+        "ChildhoodAlienation": 0.5,
+        "ACE": 0,
+        "Attention": -0.3,
+        "Flattening": 0.3
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "Sometimes I cannot tell whether I am tired or simply 'switched off'."
+    },
+    {
+      "id": "ADI_2",
+      "original_id": "2",
+      "primary_scale": "Affective Disruption Index",
+      "text": "Когда кто-то плачет, я теряюсь: помочь, отойти, промолчать?",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.2,
+        "Dissociation": 0,
+        "Empathy": -0.2,
+        "Psychopathy": 0,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 1,
+        "ChildhoodAlienation": 0.4,
+        "ACE": 0
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "When someone cries, I am at a loss: help, step back, stay silent?"
+    },
+    {
+      "id": "ADI_3",
+      "original_id": "3",
+      "primary_scale": "Affective Disruption Index",
+      "text": "Я не понимаю, почему я реагирую на одни вещи — а на другие никак",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0.3,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 1,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Attention": -0.2
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I don't understand why I react to some things and not to others."
+    },
+    {
+      "id": "ADI_4",
+      "original_id": "4",
+      "primary_scale": "Affective Disruption Index",
+      "text": "Бывает, я чувствую будто эмоции проходят мимо",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0.3,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0.3,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 1,
+        "ChildhoodAlienation": 1,
+        "ACE": 0,
+        "Flattening": 0.2
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "Sometimes I feel as if emotions pass me by."
+    },
+    {
+      "id": "ADI_5",
+      "original_id": "5",
+      "primary_scale": "Affective Disruption Index",
+      "text": "Я замираю внутри, даже если снаружи двигаюсь",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0.4,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 1,
+        "ChildhoodAlienation": 0.5,
+        "ACE": 0,
+        "Flattening": 0.3,
+        "Attention": -0.2
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I freeze inside, even when I keep moving on the outside."
+    },
+    {
+      "id": "CA_1",
+      "original_id": "1",
+      "primary_scale": "Childhood Alienation",
+      "text": "В детстве я больше наблюдал, чем участвовал",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0.8,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0.3,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 1,
+        "ACE": 1,
+        "Attention": -0.3
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "As a child I observed more than I participated."
+    },
+    {
+      "id": "CA_2",
+      "original_id": "2",
+      "primary_scale": "Childhood Alienation",
+      "text": "Я чувствовал себя лишним, даже если был не один",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.2,
+        "Dissociation": 1,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0.3,
+        "EmotionalClimate": -0.3,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 1,
+        "ACE": 1
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I felt superfluous even when I was not alone."
+    },
+    {
+      "id": "CA_3",
+      "original_id": "3",
+      "primary_scale": "Childhood Alienation",
+      "text": "Я с детства был 'в стороне' — даже с близкими",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 1,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0.2,
+        "ChildhoodAlienation": 1,
+        "ACE": 1,
+        "Flattening": 0.2
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "Since childhood I have been 'off to the side'—even with those close to me."
+    },
+    {
+      "id": "CA_4",
+      "original_id": "4",
+      "primary_scale": "Childhood Alienation",
+      "text": "Меня как будто не замечали, если я ничего не делал",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.2,
+        "Dissociation": 1,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.3,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 1,
+        "ACE": 1
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "It was as if I was not noticed when I did nothing."
+    },
+    {
+      "id": "CA_5",
+      "original_id": "5",
+      "primary_scale": "Childhood Alienation",
+      "text": "Я привык быть 'незаметным', это было безопаснее",
+      "category": "классика",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.4,
+        "Dissociation": 1,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0.4,
+        "EmotionalClimate": 0,
+        "Masking": 0.2,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 1,
+        "ACE": 1
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I got used to being 'invisible'; it felt safer."
+    },
+    {
+      "id": "IDS_new_1",
+      "original_id": "1",
+      "primary_scale": "Internal Dissonance",
+      "text": "Когда я действую, это соответствует тому, что я чувствую",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0,
+        "Empathy": 0.4,
+        "Psychopathy": 0,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Attention": 0.3
+      },
+      "reverse": true,
+      "cross_weight": null,
+      "text_en": "When I act, it aligns with what I feel."
+    },
+    {
+      "id": "IDS_new_2",
+      "original_id": "2",
+      "primary_scale": "Internal Dissonance",
+      "text": "Я легко распознаю, когда мои действия расходятся с тем, что я думаю",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.2,
+        "Dissociation": 0,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0.3,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Attention": 0.3,
+        "Lie": 0.3
+      },
+      "reverse": true,
+      "cross_weight": null,
+      "disabled": false,
+      "text_en": "I easily recognize when my actions diverge from what I think.",
+      "wave2_trim_candidate": true,
+      "wave2_trim_reason": "max_abs=0.227, double-barrel detection of action/thought divergence"
+    },
+    {
+      "id": "IDS_new_3",
+      "original_id": "3",
+      "primary_scale": "Internal Dissonance",
+      "text": "Мне трудно понять, чего я на самом деле хочу",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0.4,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0.2,
+        "Flattening": 0.2,
+        "Attention": -0.2
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "It is hard for me to understand what I actually want."
+    },
+    {
+      "id": "IDS_new_4",
+      "original_id": "4",
+      "primary_scale": "Internal Dissonance",
+      "text": "Я замечаю противоречия между своими словами и поведением",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0,
+        "Empathy": -0.2,
+        "Psychopathy": 0,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0.3,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Attention": 0.3
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "disabled": false,
+      "text_en": "I notice contradictions between my words and my behavior."
+    },
+    {
+      "id": "IDS_new_5",
+      "original_id": "5",
+      "primary_scale": "Internal Dissonance",
+      "text": "Я чувствую, что веду себя не так, как мне по-настоящему свойственно",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0.2,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0.4,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.2
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "disabled": false,
+      "text_en": "I feel that I behave differently from how I truly am."
+    },
+    {
+      "id": "AIS_new_1",
+      "original_id": "1",
+      "primary_scale": "Affective Isolation Scale",
+      "text": "Я чувствую, что мои эмоции откликаются внутри меня",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0,
+        "Empathy": 0.0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 1,
+        "EmotionalClimate": 0.3,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": -0.3
+      },
+      "reverse": true,
+      "cross_weight": null,
+      "disabled": false,
+      "text_en": "I feel that my emotions resonate inside me."
+    },
+    {
+      "id": "AIS_new_2",
+      "original_id": "2",
+      "primary_scale": "Affective Isolation Scale",
+      "text": "Даже в близком общении я чувствую отстранённость",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0.1,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.3,
+        "AffectiveIsolationScale": 1,
+        "EmotionalClimate": -0.2,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.3
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "Even in close interaction I feel a sense of distance."
+    },
+    {
+      "id": "AIS_new_3",
+      "original_id": "3",
+      "primary_scale": "Affective Isolation Scale",
+      "text": "Я испытываю внутреннюю живость и включённость",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.2,
+        "Dissociation": 0,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 1,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0.3,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": -0.3,
+        "Attention": 0.2
+      },
+      "reverse": true,
+      "cross_weight": null,
+      "disabled": false,
+      "text_en": "I experience inner aliveness and engagement."
+    },
+    {
+      "id": "AIS_new_4",
+      "original_id": "4",
+      "primary_scale": "Affective Isolation Scale",
+      "text": "Мне сложно установить эмоциональную связь, даже если человек рядом",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0.3,
+        "Empathy": -0.2,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.2,
+        "AffectiveIsolationScale": 1,
+        "EmotionalClimate": 0.4,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I find it hard to form an emotional connection, even with a person who is right there.",
+      "wave2_trim_candidate": true,
+      "wave2_trim_reason": "max_abs=0.259, redundant with AIS_new_2"
+    },
+    {
+      "id": "AIS_new_5",
+      "original_id": "5",
+      "primary_scale": "Affective Isolation Scale",
+      "text": "Я как будто рядом с людьми, но меня это не трогает",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0.2,
+        "Empathy": -0.2,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.4,
+        "AffectiveIsolationScale": 1,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.3
+      },
+      "reverse": false,
+      "disabled": true,
+      "text_en": "I seem to be beside people but it does not touch me."
+    },
+    {
+      "id": "ADI_new_1",
+      "original_id": "1",
+      "primary_scale": "Affective Disruption Index",
+      "text": "Я легко переключаюсь между противоположными эмоциями",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0.3,
+        "Empathy": -0.1,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.1,
+        "AffectiveIsolationScale": 0.2,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 1,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.2,
+        "Lie": 0.2
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I shift easily between opposite emotions."
+    },
+    {
+      "id": "ADI_new_2",
+      "original_id": "2",
+      "primary_scale": "Affective Disruption Index",
+      "text": "Я чувствую, что мои эмоции обострены или нестабильны",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.3,
+        "Dissociation": 0,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0.3,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 1,
+        "ChildhoodAlienation": 0.2,
+        "ACE": 0
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I feel that my emotions are heightened or unstable."
+    },
+    {
+      "id": "ADI_new_3",
+      "original_id": "3",
+      "primary_scale": "Affective Disruption Index",
+      "text": "Мне трудно определить, что я чувствую — как будто всё перепутано",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.3,
+        "Dissociation": 0.1,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.3,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 1,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.2,
+        "Attention": -0.3
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I find it hard to tell what I am feeling—as if everything is tangled."
+    },
+    {
+      "id": "ADI_new_4",
+      "original_id": "4",
+      "primary_scale": "Affective Disruption Index",
+      "text": "Я чувствую себя эмоционально устойчивым и собранным",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.4,
+        "Dissociation": 0,
+        "Empathy": 0,
+        "Psychopathy": 0.2,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0.3,
+        "AffectiveDisruptionIndex": 1,
+        "ChildhoodAlienation": 0,
+        "ACE": 0
+      },
+      "reverse": true,
+      "cross_weight": null,
+      "text_en": "I feel emotionally stable and composed."
+    },
+    {
+      "id": "ADI_new_5",
+      "original_id": "5",
+      "primary_scale": "Affective Disruption Index",
+      "text": "Я ясно ощущаю эмоции в себе и понимаю их изменения",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": -0.3,
+        "Empathy": 0.2,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0.3,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 1,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Attention": 0.4,
+        "Flattening": -0.3
+      },
+      "reverse": true,
+      "cross_weight": null,
+      "text_en": "I clearly sense my emotions and understand how they change."
+    },
+    {
+      "id": "S_new_1",
+      "original_id": "1",
+      "primary_scale": "Suppression",
+      "text": "Я стараюсь не показывать, что чувствую",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 1,
+        "Dissociation": 0,
+        "Empathy": -0.3,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.2,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0.4,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "disabled": true,
+      "text_en": "I try not to show what I feel."
+    },
+    {
+      "id": "S_new_2",
+      "original_id": "2",
+      "primary_scale": "Suppression",
+      "text": "Я позволяю себе проявлять эмоции, даже если это может смутить других",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 1,
+        "Dissociation": 0,
+        "Empathy": 0.4,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": -0.2,
+        "EmotionalClimate": 0,
+        "Masking": -0.3,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0
+      },
+      "reverse": true,
+      "cross_weight": null,
+      "text_en": "I allow myself to show emotions even when it might make others uncomfortable."
+    },
+    {
+      "id": "S_new_3",
+      "original_id": "3",
+      "primary_scale": "Suppression",
+      "text": "Если эмоции мешают, я стараюсь их заглушить",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 1,
+        "Dissociation": 0,
+        "Empathy": -0.2,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.3,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0.2,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.3
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "When emotions get in the way, I try to silence them.",
+      "wave2_trim_candidate": true,
+      "wave2_trim_reason": "max_abs=0.291, redundant with S_new_5"
+    },
+    {
+      "id": "S_new_4",
+      "original_id": "4",
+      "primary_scale": "Suppression",
+      "text": "Я проживаю свои чувства, даже если они сильные или неприятные",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 1,
+        "Dissociation": 0,
+        "Empathy": 0.3,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": -0.3,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0.4,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Attention": 0.2
+      },
+      "reverse": true,
+      "cross_weight": null,
+      "text_en": "I live through my feelings, even when they are strong or unpleasant."
+    },
+    {
+      "id": "S_new_5",
+      "original_id": "5",
+      "primary_scale": "Suppression",
+      "text": "Я контролирую эмоции, чтобы не потерять над собой власть",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 1,
+        "Dissociation": 0.3,
+        "Empathy": 0,
+        "Psychopathy": 0.1,
+        "InternalDissonance": 0.3,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0.3,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.2
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I control emotions so as not to lose command of myself."
+    },
+    {
+      "id": "D_new_1",
+      "original_id": "1",
+      "primary_scale": "Dissociation",
+      "text": "Я иногда чувствую себя как будто 'не здесь'",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 1,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0.3,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0.2,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.2
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "disabled": false,
+      "text_en": "I sometimes feel as if I am 'not here'."
+    },
+    {
+      "id": "D_new_2",
+      "original_id": "2",
+      "primary_scale": "Dissociation",
+      "text": "В моменты стресса я как будто отключаюсь",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.4,
+        "Dissociation": 1,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0.3,
+        "ChildhoodAlienation": 0,
+        "ACE": 0.2,
+        "Flattening": 0.2
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "In moments of stress I seem to switch off."
+    },
+    {
+      "id": "D_new_3",
+      "original_id": "3",
+      "primary_scale": "Dissociation",
+      "text": "Я действую автоматически, без чувства включённости",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 1,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.4,
+        "AffectiveIsolationScale": 0.2,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.3,
+        "Attention": -0.2
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I act automatically, without a sense of being involved."
+    },
+    {
+      "id": "D_new_4",
+      "original_id": "4",
+      "primary_scale": "Dissociation",
+      "text": "Я чувствую, что нахожусь в моменте и в контакте с собой",
+      "category": "поведение",
+      "weight": -1,
+      "weights": {
+        "Suppression": -0.2,
+        "Dissociation": -1,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0.4,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Attention": 0.3,
+        "Flattening": -0.2
+      },
+      "reverse": true,
+      "cross_weight": null,
+      "text_en": "I feel that I am in the moment and in contact with myself."
+    },
+    {
+      "id": "D_new_5",
+      "original_id": "5",
+      "primary_scale": "Dissociation",
+      "text": "Когда говорю и действую — я ощущаю себя настоящим",
+      "category": "поведение",
+      "weight": -1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": -1,
+        "Empathy": 0.2,
+        "Psychopathy": 0,
+        "InternalDissonance": -0.3,
+        "AffectiveIsolationScale": 0.4,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0
+      },
+      "reverse": true,
+      "cross_weight": null,
+      "text_en": "When I speak and act, I feel I am being myself."
+    },
+    {
+      "id": "E_new_1",
+      "original_id": "1",
+      "primary_scale": "Empathy",
+      "text": "Я легко замечаю, когда кто-то чувствует себя плохо",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": -0.2,
+        "Dissociation": 0,
+        "Empathy": 1,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0.1,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Attention": 0.3,
+        "Lie": 0.2
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I easily notice when someone feels unwell."
+    },
+    {
+      "id": "E_new_2",
+      "original_id": "2",
+      "primary_scale": "Empathy",
+      "text": "Я могу понять, что чувствует другой человек, даже если он это не говорит",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": -0.2,
+        "Dissociation": 0,
+        "Empathy": 1,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Attention": 0.3
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I can tell what another person is feeling, even when they do not say so."
+    },
+    {
+      "id": "E_new_3",
+      "original_id": "3",
+      "primary_scale": "Empathy",
+      "text": "Мне трудно уловить эмоции других людей",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0,
+        "Empathy": 1,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0.4,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Attention": -0.3
+      },
+      "reverse": true,
+      "cross_weight": null,
+      "text_en": "I find it hard to pick up on other people's emotions."
+    },
+    {
+      "id": "E_new_4",
+      "original_id": "4",
+      "primary_scale": "Empathy",
+      "text": "Я испытываю эмоциональный отклик на чужое страдание",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": -0.1,
+        "Dissociation": 0,
+        "Empathy": 1,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.2,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0.2,
+        "ChildhoodAlienation": 0,
+        "ACE": 0
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I experience an emotional response to another's suffering."
+    },
+    {
+      "id": "E_new_5",
+      "original_id": "5",
+      "primary_scale": "Empathy",
+      "text": "Я остаюсь равнодушным к чувствам других людей",
+      "category": "поведение",
+      "weight": -1,
+      "weights": {
+        "Suppression": 0.1,
+        "Dissociation": 0,
+        "Empathy": -1,
+        "Psychopathy": 0.3,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0.3,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.3
+      },
+      "reverse": true,
+      "cross_weight": null,
+      "text_en": "I remain indifferent to other people's feelings."
+    },
+    {
+      "id": "EC_new_1",
+      "original_id": "1",
+      "primary_scale": "Emotional Climate",
+      "text": "Мне легко испытывать радость и удовольствие",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0,
+        "Empathy": 0.1,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": -0.2,
+        "EmotionalClimate": 1,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0.3,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": -0.3,
+        "Attention": 0.2
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "It is easy for me to feel joy and pleasure."
+    },
+    {
+      "id": "EC_new_2",
+      "original_id": "2",
+      "primary_scale": "Emotional Climate",
+      "text": "В повседневности я почти ничего не чувствую",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0.3,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0.3,
+        "EmotionalClimate": 1,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0.2,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.4
+      },
+      "reverse": true,
+      "cross_weight": null,
+      "text_en": "In everyday life I feel almost nothing."
+    },
+    {
+      "id": "EC_new_3",
+      "original_id": "3",
+      "primary_scale": "Emotional Climate",
+      "text": "Я замечаю, что моя эмоциональная реакция часто запаздывает или отсутствует",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0.4,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.2,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 1,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0.4,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.3
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I notice that my emotional response is often delayed or absent."
+    },
+    {
+      "id": "EC_new_4",
+      "original_id": "4",
+      "primary_scale": "Emotional Climate",
+      "text": "Мои эмоции приглушены, как будто «на фоне»",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.3,
+        "Dissociation": 0,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.4,
+        "AffectiveIsolationScale": 0.2,
+        "EmotionalClimate": 1,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.5
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "My emotions are muted, as if 'in the background'."
+    },
+    {
+      "id": "EC_new_5",
+      "original_id": "5",
+      "primary_scale": "Emotional Climate",
+      "text": "Я переживаю эмоции свободно и спонтанно",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.3,
+        "Dissociation": 0,
+        "Empathy": 0.3,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": -0.2,
+        "EmotionalClimate": 1,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0.1,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": -0.3,
+        "Attention": 0.2
+      },
+      "reverse": true,
+      "cross_weight": null,
+      "disabled": false,
+      "text_en": "I experience emotions freely and spontaneously."
+    },
+    {
+      "id": "MS_new_1",
+      "original_id": "1",
+      "primary_scale": "Masking",
+      "text": "Я часто улыбаюсь или смеюсь, даже когда мне не весело",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.4,
+        "Dissociation": 0,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.3,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 1,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.2
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I often smile or laugh even when I am not amused."
+    },
+    {
+      "id": "MS_new_2",
+      "original_id": "2",
+      "primary_scale": "Masking",
+      "text": "Я чаще показываю нужную реакцию, чем испытываю её",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0.1,
+        "Empathy": -0.2,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.3,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 1,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.2
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "More often than not I display the expected reaction rather than actually feel it."
+    },
+    {
+      "id": "MS_new_3",
+      "original_id": "3",
+      "primary_scale": "Masking",
+      "text": "Люди считают меня эмоциональным, хотя внутри я спокоен",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0,
+        "Empathy": -0.1,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.3,
+        "AffectiveIsolationScale": 0.3,
+        "EmotionalClimate": 0,
+        "Masking": 1,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.2,
+        "Lie": 0.4
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "People think I am emotional, though inside I am calm.",
+      "wave2_trim_candidate": true,
+      "wave2_trim_reason": "max_abs=0.281, contradictory framing reduces validity"
+    },
+    {
+      "id": "MS_new_4",
+      "original_id": "4",
+      "primary_scale": "Masking",
+      "text": "Моя внешняя реакция обычно соответствует тому, что я чувствую",
+      "category": "поведение",
+      "weight": -1,
+      "weights": {
+        "Suppression": -0.2,
+        "Dissociation": 0,
+        "Empathy": 0.4,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": -1,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": -0.2
+      },
+      "reverse": true,
+      "cross_weight": null,
+      "text_en": "My outward reaction usually matches what I feel."
+    },
+    {
+      "id": "MS_new_5",
+      "original_id": "5",
+      "primary_scale": "Masking",
+      "text": "Мне трудно выразить настоящие эмоции — я скорее их изображу",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.1,
+        "Dissociation": 0,
+        "Empathy": -0.2,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.3,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 1,
+        "AffectiveDisruptionIndex": 0.3,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.2
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I find it hard to express real emotions—I would more likely act them out."
+    },
+    {
+      "id": "CA_new_1",
+      "original_id": "1",
+      "primary_scale": "Childhood Alienation",
+      "text": "Мне не с кем было поделиться тем, что я чувствую",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.3,
+        "Dissociation": 0,
+        "Empathy": -0.2,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0.4,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 1,
+        "ACE": 0.2
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I had no one with whom to share what I was feeling."
+    },
+    {
+      "id": "CA_new_2",
+      "original_id": "2",
+      "primary_scale": "Childhood Alienation",
+      "text": "Я не помню, чтобы кто-то в детстве был по-настоящему рядом",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0.3,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0.3,
+        "EmotionalClimate": 0.1,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 1,
+        "ACE": 0.3,
+        "Flattening": 0.2
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I do not remember anyone being truly present for me as a child."
+    },
+    {
+      "id": "CA_new_3",
+      "original_id": "3",
+      "primary_scale": "Childhood Alienation",
+      "text": "Мне казалось, что мои чувства — никому не важны",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.3,
+        "Dissociation": 0,
+        "Empathy": -0.3,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.1,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0.2,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 1,
+        "ACE": 0,
+        "Flattening": 0.3
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "It seemed to me that my feelings did not matter to anyone."
+    },
+    {
+      "id": "CA_new_4",
+      "original_id": "4",
+      "primary_scale": "Childhood Alienation",
+      "text": "Я чувствовал, что меня не замечают как личность",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0.2,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.2,
+        "AffectiveIsolationScale": 0.2,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 1,
+        "ACE": 0.2,
+        "Flattening": 0.2
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I felt that I was not noticed as a person."
+    },
+    {
+      "id": "CA_new_5",
+      "original_id": "5",
+      "primary_scale": "Childhood Alienation",
+      "text": "В детстве я чувствовал себя в безопасности и нужным",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": -0.2,
+        "Dissociation": 0,
+        "Empathy": 0.3,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0.4,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": -1,
+        "ACE": 0,
+        "Attention": 0.2
+      },
+      "reverse": true,
+      "cross_weight": null,
+      "text_en": "As a child I felt safe and wanted."
+    },
+    {
+      "id": "P_new_1",
+      "original_id": "1",
+      "primary_scale": "Psychopathy",
+      "text": "Я могу манипулировать другими, если это выгодно",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0,
+        "Empathy": -0.5,
+        "Psychopathy": 1,
+        "InternalDissonance": 0.2,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0.3,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Attention": -0.2
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I can manipulate others when it is advantageous."
+    },
+    {
+      "id": "P_new_2",
+      "original_id": "2",
+      "primary_scale": "Psychopathy",
+      "text": "Если можно обойти правило без последствий — я это делаю",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0,
+        "Empathy": -0.4,
+        "Psychopathy": 1,
+        "InternalDissonance": 0.4,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0.2,
+        "AffectiveDisruptionIndex": 0.2,
+        "ChildhoodAlienation": 0,
+        "ACE": 0
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "If I can bypass a rule without consequences, I do."
+    },
+    {
+      "id": "P_new_3",
+      "original_id": "3",
+      "primary_scale": "Psychopathy",
+      "text": "Я чувствую вину, когда причиняю вред другим",
+      "category": "поведение",
+      "weight": -1,
+      "weights": {
+        "Suppression": -0.2,
+        "Dissociation": 0,
+        "Empathy": 0.4,
+        "Psychopathy": -1,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Attention": 0.3
+      },
+      "reverse": true,
+      "cross_weight": null,
+      "disabled": false,
+      "text_en": "I feel guilty when I cause harm to others."
+    },
+    {
+      "id": "P_new_4",
+      "original_id": "4",
+      "primary_scale": "Psychopathy",
+      "text": "Я действую рационально, даже если это выглядит холодно",
+      "category": "поведение",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.2,
+        "Dissociation": 0,
+        "Empathy": -0.2,
+        "Psychopathy": 1,
+        "InternalDissonance": 0.2,
+        "AffectiveIsolationScale": 0.2,
+        "EmotionalClimate": 0,
+        "Masking": 0.2,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.3
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I act rationally, even when it looks cold."
+    },
+    {
+      "id": "P_new_5",
+      "original_id": "5",
+      "primary_scale": "Psychopathy",
+      "text": "Я поступаю по совести, даже если теряю выгоду",
+      "category": "поведение",
+      "weight": -1,
+      "weights": {
+        "Suppression": -0.2,
+        "Dissociation": 0,
+        "Empathy": 0.1,
+        "Psychopathy": -1,
+        "InternalDissonance": 0.3,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Attention": 0.3
+      },
+      "reverse": true,
+      "cross_weight": null,
+      "disabled": false,
+      "text_en": "I act according to my conscience, even when it costs me."
+    },
+    {
+      "id": "ACE_1",
+      "original_id": "1",
+      "primary_scale": "ACE",
+      "text": "В детстве вас часто оскорбляли, унижали или запугивали дома?",
+      "category": "ACE (Да/Нет/Не помню)",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 1,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 1,
+        "ACE": 1
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "As a child, were you often insulted, humiliated, or intimidated at home?"
+    },
+    {
+      "id": "ACE_2",
+      "original_id": "2",
+      "primary_scale": "ACE",
+      "text": "В детстве вам приходилось видеть, как один из родителей/опекунов бьёт другого?",
+      "category": "ACE (Да/Нет/Не помню)",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 1,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 1,
+        "ACE": 1
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "As a child, did you see one of your parents or caregivers hit the other?"
+    },
+    {
+      "id": "ACE_3",
+      "original_id": "3",
+      "primary_scale": "ACE",
+      "text": "В детстве кто‑то из взрослых толкал, бил или бросал предметы в вас?",
+      "category": "ACE (Да/Нет/Не помню)",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.2,
+        "Dissociation": 0.3,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 1,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 1,
+        "ACE": 1
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "As a child, did an adult push, hit, or throw things at you?"
+    },
+    {
+      "id": "ACE_4",
+      "original_id": "4",
+      "primary_scale": "ACE",
+      "text": "В детстве вы жили с человеком, страдавшим алкогольной или наркотической зависимостью?",
+      "category": "ACE (Да/Нет/Не помню)",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 1,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 1,
+        "ACE": 1
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "As a child, did you live with someone who suffered from alcohol or drug dependence?"
+    },
+    {
+      "id": "ACE_5",
+      "original_id": "5",
+      "primary_scale": "ACE",
+      "text": "В детстве один из родителей/опекунов находился в тюрьме?",
+      "category": "ACE (Да/Нет/Не помню)",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 1,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 1,
+        "ACE": 1
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "As a child, was one of your parents or caregivers in prison?"
+    },
+    {
+      "id": "ACE_6",
+      "original_id": "6",
+      "primary_scale": "ACE",
+      "text": "В детстве вас оставляли без присмотра или не обеспечивали базовые потребности (еда, одежда, медицина)?",
+      "category": "ACE (Да/Нет/Не помню)",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 1,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0.2,
+        "ChildhoodAlienation": 1,
+        "ACE": 1,
+        "Flattening": 0.2
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "As a child, were you left unsupervised or were your basic needs (food, clothing, medical care) not met?"
+    },
+    {
+      "id": "ACE_7",
+      "original_id": "7",
+      "primary_scale": "ACE",
+      "text": "В детстве вы подвергались сексуальным домогательствам или насилию?",
+      "category": "ACE (Да/Нет/Не помню)",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.2,
+        "Dissociation": 0.3,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 1,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 1,
+        "ACE": 1
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "As a child, did you experience sexual harassment or abuse?"
+    },
+    {
+      "id": "ACE_8",
+      "original_id": "8",
+      "primary_scale": "ACE",
+      "text": "Ваши родители были разведены или разошлись, пока вам не исполнилось 18 лет?",
+      "category": "ACE (Да/Нет/Не помню)",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 1,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 1,
+        "ACE": 1
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "Were your parents divorced or separated before you turned 18?"
+    },
+    {
+      "id": "ACE_9",
+      "original_id": "9",
+      "primary_scale": "ACE",
+      "text": "В детстве вы жили с человеком, страдавшим серьёзным психическим заболеванием или попытками самоубийства?",
+      "category": "ACE (Да/Нет/Не помню)",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0.2,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0.2,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 1,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 1,
+        "ACE": 1
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "As a child, did you live with someone who had a serious mental illness or suicide attempts?"
+    },
+    {
+      "id": "ACE_10",
+      "original_id": "10",
+      "primary_scale": "ACE",
+      "text": "В детстве вам казалось, что в семье никто не любил и не поддерживал вас?",
+      "category": "ACE (Да/Нет/Не помню)",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.3,
+        "Dissociation": 0,
+        "Empathy": -0.2,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0.3,
+        "EmotionalClimate": 1,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 1,
+        "ACE": 1
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "As a child, did it seem to you that no one in the family loved or supported you?"
+    },
+    {
+      "id": "IDS_new_6",
+      "original_id": "1",
+      "primary_scale": "Internal Dissonance",
+      "text": "Я замечаю, что должен сочувствовать, но не чувствую ничего внутри",
+      "category": "новые",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.2,
+        "Dissociation": 0,
+        "Empathy": -0.4,
+        "Psychopathy": 0,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0.3,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.3
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I notice that I ought to sympathize but feel nothing inside."
+    },
+    {
+      "id": "IDS_new_7",
+      "original_id": "2",
+      "primary_scale": "Internal Dissonance",
+      "text": "Мне бывает неловко, что я остаюсь равнодушным, когда другим тяжело",
+      "category": "новые",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0,
+        "Empathy": -0.3,
+        "Psychopathy": 0,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.2,
+        "Attention": 0.2
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I feel awkward that I remain indifferent when others are in distress."
+    },
+    {
+      "id": "IDS_new_8",
+      "original_id": "3",
+      "primary_scale": "Internal Dissonance",
+      "text": "Я помогаю людям, даже если эмоционально «отключён»",
+      "category": "новые",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.3,
+        "Dissociation": 0.3,
+        "Empathy": 0.3,
+        "Psychopathy": 0,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0.2,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I help people even when I am emotionally 'switched off'.",
+      "wave2_trim_candidate": true,
+      "wave2_trim_reason": "max_abs=0.257, behavioral compensation question — too specific"
+    },
+    {
+      "id": "IDS_new_9",
+      "original_id": "4",
+      "primary_scale": "Internal Dissonance",
+      "text": "Иногда я злюсь на себя за то, что сопереживаю тем, кто этого не заслуживает",
+      "category": "новые",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0,
+        "Empathy": 1,
+        "Psychopathy": 0.3,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "Sometimes I am angry at myself for feeling compassion for those who do not deserve it."
+    },
+    {
+      "id": "IDS_new_10",
+      "original_id": "5",
+      "primary_scale": "Internal Dissonance",
+      "text": "Я не могу понять: я действительно сочувствую — или просто делаю вид",
+      "category": "новые",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0.2,
+        "Empathy": 0.5,
+        "Psychopathy": 0,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0.3,
+        "AffectiveDisruptionIndex": 0.3,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "I cannot tell whether I truly feel compassion or only pretend to."
+    },
+    {
+      "id": "IDS_new_11",
+      "original_id": "6",
+      "primary_scale": "Internal Dissonance",
+      "text": "Бывает, что я веду себя заботливо, но внутри ничего не чувствую",
+      "category": "новые",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0.3,
+        "Empathy": 0.2,
+        "Psychopathy": 0,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0.2,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.3
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "Sometimes I behave caringly but feel nothing inside."
+    },
+    {
+      "id": "IDS_new_12",
+      "original_id": "7",
+      "primary_scale": "Internal Dissonance",
+      "text": "Иногда мне стыдно, что я не чувствую эмпатию даже к близким",
+      "category": "новые",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.2,
+        "Dissociation": 0,
+        "Empathy": -0.5,
+        "Psychopathy": 0,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0.3,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.3
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "Sometimes I am ashamed that I do not feel empathy even toward those close to me."
+    },
+    {
+      "id": "MS_new_6",
+      "primary_scale": "Masking",
+      "text": "Я всегда знаю, что чувствую, и умею это выразить",
+      "category": "новые",
+      "weight": -1,
+      "weights": {
+        "Suppression": -0.3,
+        "Dissociation": 0,
+        "Empathy": 0.3,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": -1,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": -0.3,
+        "Lie": 0.3
+      },
+      "reverse": true,
+      "disabled": false,
+      "text_en": "I always know what I feel and can express it."
+    },
+    {
+      "id": "MS_new_8",
+      "original_id": "MS_3",
+      "primary_scale": "Masking",
+      "text": "Я никогда не теряю самообладания — даже внутри",
+      "category": "новые",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0.4,
+        "Dissociation": 0.2,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 1,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.3
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "comment": "Контроль с потенциалом внутреннего конфликта",
+      "text_en": "I never lose my composure—even inside."
+    },
+    {
+      "id": "MS_new_9",
+      "original_id": "MS_4",
+      "primary_scale": "Masking",
+      "text": "Я чувствую себя хорошо почти всегда",
+      "category": "новые",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0,
+        "Empathy": -0.2,
+        "Psychopathy": 0.2,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 1,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.3,
+        "Lie": 0.4
+      },
+      "reverse": false,
+      "comment": "Позитивный фасад, без признаков нарциссизма",
+      "text_en": "I feel well almost all the time."
+    },
+    {
+      "id": "MS_new_10",
+      "primary_scale": "Masking",
+      "text": "У меня нет проблем с эмоциями — это у других сложности",
+      "category": "новые",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0,
+        "Empathy": -0.5,
+        "Psychopathy": 1,
+        "InternalDissonance": 1,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 1,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0,
+        "Flattening": 0.3,
+        "Lie": 0.4
+      },
+      "reverse": false,
+      "comment": "Нарциссическая защита, оставляем все веса",
+      "text_en": "I have no problems with emotions—that's others' trouble."
+    },
+    {
+      "id": "CASE_1",
+      "text": "Ты пообещал помочь другу, но у тебя нет ни сил, ни желания. Что ты сделаешь?",
+      "category": "сценарий",
+      "primary_scale": "InternalDissonance",
+      "answers": [
+        {
+          "text": "Помогаю, скрывая раздражение.",
+          "weights": {
+            "InternalDissonance": 1,
+            "Suppression": 0.5
+          }
+        },
+        {
+          "text": "Отказываю с чувством вины.",
+          "weights": {
+            "InternalDissonance": 0.8
+          }
+        },
+        {
+          "text": "Объясняю честно, что не могу.",
+          "weights": {
+            "Empathy": 0.6
+          }
+        },
+        {
+          "text": "Грубо отказываю — не моя проблема.",
+          "weights": {
+            "Psychopathy": 0.8
+          }
+        }
+      ],
+      "type": "situation",
+      "text_en": "You have promised to help a friend, but you have neither the strength nor the desire. What do you do?"
+    },
+    {
+      "id": "CASE_2",
+      "text": "Начальник несправедливо критикует тебя на собрании. Как ты реагируешь?",
+      "category": "сценарий",
+      "primary_scale": "InternalDissonance",
+      "answers": [
+        {
+          "text": "Молчу, но внутри киплю.",
+          "weights": {
+            "InternalDissonance": 1,
+            "Suppression": 0.5
+          }
+        },
+        {
+          "text": "Отвечаю спокойно, но чувствую вину.",
+          "weights": {
+            "InternalDissonance": 0.7
+          }
+        },
+        {
+          "text": "Держу границы и объясняю.",
+          "weights": {
+            "Empathy": 0.4,
+            "Attention": 0.4
+          }
+        },
+        {
+          "text": "Поддавливаю его в ответ.",
+          "weights": {
+            "Psychopathy": 0.9
+          }
+        }
+      ],
+      "type": "situation",
+      "text_en": "Your boss criticizes you unfairly at a meeting. How do you react?"
+    },
+    {
+      "id": "CASE_3",
+      "text": "Ты приглашаешь друга в гости, но сам этого не хочешь. Что ты сделаешь?",
+      "category": "сценарий",
+      "primary_scale": "InternalDissonance",
+      "answers": [
+        {
+          "text": "Приглашаю «из вежливости», потом злюсь на себя.",
+          "weights": {
+            "InternalDissonance": 1
+          }
+        },
+        {
+          "text": "Отменяю в последний момент.",
+          "weights": {
+            "AffectiveIsolationScale": 0.6
+          }
+        },
+        {
+          "text": "Прямо говорю, что не в ресурсе.",
+          "weights": {
+            "Empathy": 0.5,
+            "Attention": 0.4
+          }
+        },
+        {
+          "text": "Приглашаю, но потом стараюсь игнорировать гостя.",
+          "weights": {
+            "Masking": 0.6
+          }
+        }
+      ],
+      "type": "situation",
+      "text_en": "You invite a friend over, but you do not actually want to. What do you do?"
+    },
+    {
+      "id": "CASE_4",
+      "text": "Близкий человек рассказывает тебе о тяжёлых переживаниях. Твоя реакция?",
+      "category": "сценарий",
+      "primary_scale": "AffectiveIsolationScale",
+      "answers": [
+        {
+          "text": "Слушаю, но не чувствую никакого отклика.",
+          "weights": {
+            "AffectiveIsolationScale": 1,
+            "Flattening": 0.5
+          }
+        },
+        {
+          "text": "Слушаю из вежливости, думаю о своём.",
+          "weights": {
+            "Masking": 0.7
+          }
+        },
+        {
+          "text": "Пытаюсь понять, но внутри пусто.",
+          "weights": {
+            "InternalDissonance": 0.8
+          }
+        },
+        {
+          "text": "Сопереживаю и поддерживаю.",
+          "weights": {
+            "Empathy": 1
+          }
+        }
+      ],
+      "type": "situation",
+      "text_en": "A close person tells you about difficult experiences. Your reaction?"
+    },
+    {
+      "id": "CASE_5",
+      "text": "Ты на празднике среди близких. Что ты скорее ощущаешь?",
+      "category": "сценарий",
+      "primary_scale": "AffectiveIsolationScale",
+      "answers": [
+        {
+          "text": "Отстранённость и эмоциональную глухоту.",
+          "weights": {
+            "AffectiveIsolationScale": 1,
+            "Dissociation": 0.4
+          }
+        },
+        {
+          "text": "Скуку и желание уйти.",
+          "weights": {
+            "Flattening": 0.6
+          }
+        },
+        {
+          "text": "Тепло, но сдержанность.",
+          "weights": {
+            "Empathy": 0.5,
+            "Suppression": 0.4
+          }
+        },
+        {
+          "text": "Присутствие, радость, связь.",
+          "weights": {
+            "EmotionalClimate": 0.8
+          }
+        }
+      ],
+      "type": "situation",
+      "text_en": "You are at a celebration surrounded by people close to you. What do you more likely feel?"
+    },
+    {
+      "id": "CASE_6",
+      "text": "Кто-то неожиданно делает тебе комплимент при всех. Как ты реагируешь?",
+      "category": "сценарий",
+      "primary_scale": "Suppression",
+      "answers": [
+        {
+          "text": "Смущаюсь и стараюсь не показать реакцию.",
+          "weights": {
+            "Suppression": 1
+          }
+        },
+        {
+          "text": "Отвечаю нейтрально, но внутри радуюсь.",
+          "weights": {
+            "Masking": 0.6
+          }
+        },
+        {
+          "text": "Принимаю с благодарностью.",
+          "weights": {
+            "EmotionalClimate": 0.6,
+            "Empathy": 0.3
+          }
+        },
+        {
+          "text": "Шучу, чтобы перевести тему.",
+          "weights": {
+            "AffectiveIsolationScale": 0.4
+          }
+        }
+      ],
+      "type": "situation",
+      "text_en": "Someone unexpectedly compliments you in front of everyone. How do you react?"
+    },
+    {
+      "id": "CASE_7",
+      "text": "Ты спотыкаешься на улице, и прохожие смеются. Что ты чувствуешь?",
+      "category": "сценарий",
+      "primary_scale": "EmotionalClimate",
+      "answers": [
+        {
+          "text": "Мгновенно замыкаюсь — лучше не чувствовать.",
+          "weights": {
+            "EmotionalClimate": -1,
+            "Suppression": 1
+          }
+        },
+        {
+          "text": "Улыбаюсь в ответ, скрывая обиду.",
+          "weights": {
+            "Masking": 0.7
+          }
+        },
+        {
+          "text": "Стыдно, но не смертельно — иду дальше.",
+          "weights": {
+            "Flattening": 0.3,
+            "Attention": 0.5
+          }
+        },
+        {
+          "text": "Отношу это к несерьёзному и забываю.",
+          "weights": {
+            "Psychopathy": 0.2
+          }
+        }
+      ],
+      "type": "situation",
+      "text_en": "You trip on the street and passers-by laugh. What do you feel?"
+    },
+    {
+      "id": "CASE_8",
+      "text": "Ты узнаёшь, что коллегу уволили по твоей наводке. Что ты чувствуешь?",
+      "category": "сценарий",
+      "primary_scale": "Psychopathy",
+      "answers": [
+        {
+          "text": "Мне всё равно, главное — я остался.",
+          "weights": {
+            "Psychopathy": 1
+          }
+        },
+        {
+          "text": "Неловко, но не жалею.",
+          "weights": {
+            "Psychopathy": 0.6,
+            "InternalDissonance": 0.4
+          }
+        },
+        {
+          "text": "Чувствую вину и тревогу.",
+          "weights": {
+            "Empathy": 0.8
+          }
+        },
+        {
+          "text": "Думаю, что он сам виноват.",
+          "weights": {
+            "Masking": 0.5
+          }
+        }
+      ],
+      "type": "situation",
+      "text_en": "You learn that a colleague has been fired because of your tip. What do you feel?"
+    },
+    {
+      "id": "CASE_9",
+      "text": "Во время важного разговора ты вдруг не можешь вспомнить, о чём шла речь.",
+      "category": "сценарий",
+      "primary_scale": "Dissociation",
+      "answers": [
+        {
+          "text": "Как будто выпал на секунду — всё размыто.",
+          "weights": {
+            "Dissociation": 1
+          }
+        },
+        {
+          "text": "Просто отвлёкся — бывает.",
+          "weights": {
+            "Attention": 0.4
+          }
+        },
+        {
+          "text": "Продолжаю говорить, но не чувствую включённости.",
+          "weights": {
+            "Masking": 0.6
+          }
+        },
+        {
+          "text": "Останавливаюсь и возвращаюсь к телу.",
+          "weights": {
+            "Empathy": 0.3
+          }
+        }
+      ],
+      "type": "situation",
+      "text_en": "During an important conversation you suddenly cannot recall what was said."
+    },
+    {
+      "id": "CASE_10",
+      "text": "Тебе выгодно промолчать, чтобы друг попал в неприятности. Что ты сделаешь?",
+      "category": "сценарий",
+      "primary_scale": "Psychopathy",
+      "answers": [
+        {
+          "text": "Я промолчу — не моя проблема.",
+          "weights": {
+            "Psychopathy": 1
+          }
+        },
+        {
+          "text": "Помогу, но без желания.",
+          "weights": {
+            "Empathy": 0.4,
+            "InternalDissonance": 0.6
+          }
+        },
+        {
+          "text": "Предупрежу, но раздражённо.",
+          "weights": {
+            "Suppression": 0.4
+          }
+        },
+        {
+          "text": "Скажу прямо и заботливо.",
+          "weights": {
+            "Empathy": 0.8
+          }
+        }
+      ],
+      "type": "situation",
+      "text_en": "It is to your benefit to stay silent so that a friend gets into trouble. What do you do?"
+    },
+    {
+      "id": "LIE_1",
+      "original_id": "LIE_1",
+      "primary_scale": "Lie",
+      "text": "Я иногда говорю неправду",
+      "category": "контроль",
+      "weight": 1,
+      "weights": {
+        "Lie": 1,
+        "Suppression": 0,
+        "Dissociation": 0,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0
+      },
+      "reverse": false,
+      "text_en": "I sometimes tell untruths."
+    },
+    {
+      "id": "CONTROL_1",
+      "original_id": "CONTROL_1",
+      "primary_scale": "Control",
+      "text": "Пожалуйста, выберите вариант 'Скорее согласен'",
+      "category": "контроль",
+      "weight": 1,
+      "weights": {
+        "Suppression": 0,
+        "Dissociation": 0,
+        "Empathy": 0,
+        "Psychopathy": 0,
+        "InternalDissonance": 0,
+        "AffectiveIsolationScale": 0,
+        "EmotionalClimate": 0,
+        "Masking": 0,
+        "AffectiveDisruptionIndex": 0,
+        "ChildhoodAlienation": 0,
+        "ACE": 0
+      },
+      "reverse": false,
+      "cross_weight": null,
+      "text_en": "Please choose the 'Somewhat agree' option."
+    },
+    {
+      "id": "BUL_1",
+      "original_id": "BUL_1",
+      "primary_scale": "BUL",
+      "text": "Меня систематически высмеивали или унижали в школьные годы",
+      "text_en": "I was systematically mocked or humiliated during my school years",
+      "category": "wave_1_5_extension",
+      "register": "fact",
+      "weight": 1,
+      "weights": {
+        "BUL": 1.0,
+        "CA": 0.4,
+        "M": 0.3,
+        "ID": 0.2
+      },
+      "reverse": false,
+      "disabled": false,
+      "wave_introduced": "1.5"
+    },
+    {
+      "id": "BUL_2",
+      "original_id": "BUL_2",
+      "primary_scale": "BUL",
+      "text": "Я подвергался(лась) физической агрессии со стороны сверстников",
+      "text_en": "I was a target of physical aggression from peers",
+      "category": "wave_1_5_extension",
+      "register": "fact",
+      "weight": 1,
+      "weights": {
+        "BUL": 1.0,
+        "CA": 0.4,
+        "D": 0.2
+      },
+      "reverse": false,
+      "disabled": false,
+      "wave_introduced": "1.5"
+    },
+    {
+      "id": "BUL_3",
+      "original_id": "BUL_3",
+      "primary_scale": "BUL",
+      "text": "У меня в школе был хотя бы один взрослый, к которому я мог(ла) обратиться за защитой",
+      "text_en": "There was at least one adult at school I could turn to for protection",
+      "category": "wave_1_5_extension",
+      "register": "fact",
+      "weight": 1,
+      "weights": {
+        "BUL": -0.8,
+        "CA": -0.3
+      },
+      "reverse": true,
+      "disabled": false,
+      "wave_introduced": "1.5"
+    },
+    {
+      "id": "BUL_4",
+      "original_id": "BUL_4",
+      "primary_scale": "BUL",
+      "text": "Я начал(а) избегать школы или конкретных людей из-за травли",
+      "text_en": "I started avoiding school or specific people because of bullying",
+      "category": "wave_1_5_extension",
+      "register": "fact",
+      "weight": 1,
+      "weights": {
+        "BUL": 0.9,
+        "D": 0.3,
+        "M": 0.3
+      },
+      "reverse": false,
+      "disabled": false,
+      "wave_introduced": "1.5"
+    },
+    {
+      "id": "BUL_decl_1",
+      "original_id": "BUL_decl_1",
+      "primary_scale": "BUL",
+      "text": "Я склонен(на) ожидать неприятия от незнакомых групп людей",
+      "text_en": "I tend to expect rejection from unfamiliar groups of people",
+      "category": "wave_1_5_extension",
+      "register": "declarative",
+      "weight": 1,
+      "weights": {
+        "BUL": 0.7,
+        "M": 0.4,
+        "ID": 0.3
+      },
+      "reverse": false,
+      "disabled": false,
+      "wave_introduced": "1.5"
+    },
+    {
+      "id": "BUL_beh_1",
+      "original_id": "BUL_beh_1",
+      "primary_scale": "BUL",
+      "text": "Когда я вхожу в новую группу, я отслеживаю, кто может меня отвергнуть",
+      "text_en": "When I enter a new group, I scan for who might reject me",
+      "category": "wave_1_5_extension",
+      "register": "behavioral",
+      "weight": 1,
+      "weights": {
+        "BUL": 0.7,
+        "M": 0.4,
+        "ID": 0.3
+      },
+      "reverse": false,
+      "disabled": false,
+      "wave_introduced": "1.5"
+    },
+    {
+      "id": "BUL_decl_2",
+      "original_id": "BUL_decl_2",
+      "primary_scale": "BUL",
+      "text": "Воспоминания о школе ощущаются как постоянная оценка и угроза",
+      "text_en": "My memories of school feel like constant evaluation and threat",
+      "category": "wave_1_5_extension",
+      "register": "declarative",
+      "weight": 1,
+      "weights": {
+        "BUL": 0.8,
+        "CA": 0.3
+      },
+      "reverse": false,
+      "disabled": false,
+      "wave_introduced": "1.5"
+    },
+    {
+      "id": "BUL_beh_2",
+      "original_id": "BUL_beh_2",
+      "primary_scale": "BUL",
+      "text": "На прошлой неделе я ощущал(а) напряжение в социальной ситуации, напоминающей школьную",
+      "text_en": "In the past week I felt tension in a social situation that reminded me of school",
+      "category": "wave_1_5_extension",
+      "register": "behavioral",
+      "weight": 1,
+      "weights": {
+        "BUL": 0.7,
+        "CA": 0.2,
+        "M": 0.3
+      },
+      "reverse": false,
+      "disabled": false,
+      "wave_introduced": "1.5"
+    },
+    {
+      "id": "THX_1",
+      "original_id": "THX_1",
+      "primary_scale": "THX",
+      "text": "Я проходил(а) или прохожу психотерапию длительностью более 6 месяцев",
+      "text_en": "I have undergone or am undergoing psychotherapy for more than 6 months",
+      "category": "wave_1_5_extension",
+      "register": "fact",
+      "weight": 1,
+      "weights": {
+        "THX": 1.0,
+        "A": 0.3
+      },
+      "reverse": false,
+      "disabled": false,
+      "wave_introduced": "1.5"
+    },
+    {
+      "id": "THX_2",
+      "original_id": "THX_2",
+      "primary_scale": "THX",
+      "text": "Главная модальность вашей терапии (если применимо)",
+      "text_en": "Main modality of your therapy (if applicable)",
+      "category": "wave_1_5_extension",
+      "register": "categorical",
+      "weight": 1,
+      "weights": {
+        "THX": 0.5
+      },
+      "reverse": false,
+      "disabled": false,
+      "wave_introduced": "1.5",
+      "answers": [
+        {
+          "text": "Психоаналитическая / психодинамическая",
+          "text_en": "Psychoanalytic / psychodynamic",
+          "value": "psychodyn"
+        },
+        {
+          "text": "КПТ / когнитивно-поведенческая",
+          "text_en": "CBT / cognitive-behavioral",
+          "value": "cbt"
+        },
+        {
+          "text": "IFS / схема-терапия",
+          "text_en": "IFS / schema therapy",
+          "value": "ifs_schema"
+        },
+        {
+          "text": "Сома / EMDR / Somatic Experiencing",
+          "text_en": "Somatic / EMDR / Somatic Experiencing",
+          "value": "somatic_emdr"
+        },
+        {
+          "text": "Mindfulness-based (MBCT, MBSR)",
+          "text_en": "Mindfulness-based (MBCT, MBSR)",
+          "value": "mindfulness"
+        },
+        {
+          "text": "Гештальт",
+          "text_en": "Gestalt",
+          "value": "gestalt"
+        },
+        {
+          "text": "Смешанная / другая / не помню",
+          "text_en": "Mixed / other / don't remember",
+          "value": "mixed"
+        },
+        {
+          "text": "Не применимо (не проходил терапию)",
+          "text_en": "Not applicable (did not undergo therapy)",
+          "value": "na"
+        }
+      ]
+    },
+    {
+      "id": "THX_3",
+      "original_id": "THX_3",
+      "primary_scale": "THX",
+      "text": "Я регулярно медитирую или практикую другие созерцательные дисциплины (≥3 раза в неделю за последний год)",
+      "text_en": "I regularly meditate or practice other contemplative disciplines (≥3 times/week over the past year)",
+      "category": "wave_1_5_extension",
+      "register": "fact",
+      "weight": 1,
+      "weights": {
+        "THX": 0.7,
+        "A": 0.5
+      },
+      "reverse": false,
+      "disabled": false,
+      "wave_introduced": "1.5"
+    },
+    {
+      "id": "THX_4",
+      "original_id": "THX_4",
+      "primary_scale": "THX",
+      "text": "Я работал(а) с психоделиками или кетамином в терапевтическом контексте",
+      "text_en": "I have worked with psychedelics or ketamine in a therapeutic context",
+      "category": "wave_1_5_extension",
+      "register": "fact",
+      "weight": 1,
+      "weights": {
+        "THX": 0.6,
+        "A": 0.3
+      },
+      "reverse": false,
+      "disabled": false,
+      "wave_introduced": "1.5"
+    },
+    {
+      "id": "ATT_decl_1",
+      "original_id": "ATT_decl_1",
+      "primary_scale": "ATT",
+      "text": "В партнёрских отношениях я часто беру эмоциональную ответственность на себя",
+      "text_en": "In partner relationships I often take on emotional responsibility",
+      "category": "wave_1_5_extension",
+      "register": "declarative",
+      "weight": 1,
+      "weights": {
+        "ATT": 0.8,
+        "E_AF": 0.3,
+        "M": 0.3
+      },
+      "reverse": false,
+      "disabled": false,
+      "wave_introduced": "1.5"
+    },
+    {
+      "id": "ATT_beh_1",
+      "original_id": "ATT_beh_1",
+      "primary_scale": "ATT",
+      "text": "За последний год я отказывался(лась) от своих планов, чтобы поддержать партнёра в трудной ситуации",
+      "text_en": "In the past year I gave up my plans to support a partner in a difficult situation",
+      "category": "wave_1_5_extension",
+      "register": "behavioral",
+      "weight": 1,
+      "weights": {
+        "ATT": 0.7,
+        "E_AF": 0.4,
+        "M": 0.2
+      },
+      "reverse": false,
+      "disabled": false,
+      "wave_introduced": "1.5"
+    },
+    {
+      "id": "ATT_decl_2",
+      "original_id": "ATT_decl_2",
+      "primary_scale": "ATT",
+      "text": "Меня тянет к людям, которые эмоционально холодны или непредсказуемы",
+      "text_en": "I am drawn to people who are emotionally cold or unpredictable",
+      "category": "wave_1_5_extension",
+      "register": "declarative",
+      "weight": 1,
+      "weights": {
+        "ATT": 0.9,
+        "CA": 0.3
+      },
+      "reverse": false,
+      "disabled": false,
+      "wave_introduced": "1.5"
+    },
+    {
+      "id": "ATT_beh_2",
+      "original_id": "ATT_beh_2",
+      "primary_scale": "ATT",
+      "text": "В моих последних значимых отношениях партнёр был эмоционально холоднее меня",
+      "text_en": "In my most recent significant relationships my partner was emotionally colder than me",
+      "category": "wave_1_5_extension",
+      "register": "behavioral",
+      "weight": 1,
+      "weights": {
+        "ATT": 0.8,
+        "CA": 0.2
+      },
+      "reverse": false,
+      "disabled": false,
+      "wave_introduced": "1.5"
+    },
+    {
+      "id": "LOSS_1",
+      "original_id": "LOSS_1",
+      "primary_scale": "LOSS",
+      "text": "Я переживал(а) смерть близкого, после которой долго не мог(ла) вернуться к привычной жизни",
+      "text_en": "I have experienced the death of someone close after which I could not return to my ordinary life for a long time",
+      "category": "wave_1_5_extension",
+      "register": "fact",
+      "weight": 1,
+      "weights": {
+        "LOSS": 1.0,
+        "D": 0.3,
+        "ID": 0.2
+      },
+      "reverse": false,
+      "disabled": false,
+      "wave_introduced": "1.5"
+    },
+    {
+      "id": "LOSS_2",
+      "original_id": "LOSS_2",
+      "primary_scale": "LOSS",
+      "text": "Я переживал(а) разрыв значимых отношений, который изменил мою способность доверять",
+      "text_en": "I have experienced a breakup of significant relationships that changed my ability to trust",
+      "category": "wave_1_5_extension",
+      "register": "fact",
+      "weight": 1,
+      "weights": {
+        "LOSS": 0.9,
+        "CA": 0.2,
+        "M": 0.3
+      },
+      "reverse": false,
+      "disabled": false,
+      "wave_introduced": "1.5"
+    },
+    {
+      "id": "LOSS_decl_1",
+      "original_id": "LOSS_decl_1",
+      "primary_scale": "LOSS",
+      "text": "Когда я думаю о потерях прошлого, я скорее замираю, чем чувствую",
+      "text_en": "When I think about past losses, I freeze rather than feel",
+      "category": "wave_1_5_extension",
+      "register": "declarative",
+      "weight": 1,
+      "weights": {
+        "LOSS": 0.6,
+        "D": 0.5,
+        "ID": 0.4
+      },
+      "reverse": false,
+      "disabled": false,
+      "wave_introduced": "1.5"
+    },
+    {
+      "id": "NET_1",
+      "original_id": "NET_1",
+      "primary_scale": "NET",
+      "text": "Сколько часов в день вы проводите в социальных сетях или новостных лентах?",
+      "text_en": "How many hours per day do you spend on social media or news feeds?",
+      "category": "wave_1_5_extension",
+      "register": "categorical",
+      "weight": 1,
+      "weights": {
+        "NET": 1.0
+      },
+      "reverse": false,
+      "disabled": false,
+      "wave_introduced": "1.5",
+      "answers": [
+        {
+          "text": "Менее 1 часа",
+          "text_en": "Less than 1 hour",
+          "value": "<1"
+        },
+        {
+          "text": "1–2 часа",
+          "text_en": "1–2 hours",
+          "value": "1-2"
+        },
+        {
+          "text": "2–4 часа",
+          "text_en": "2–4 hours",
+          "value": "2-4"
+        },
+        {
+          "text": "4–6 часов",
+          "text_en": "4–6 hours",
+          "value": "4-6"
+        },
+        {
+          "text": "Более 6 часов",
+          "text_en": "More than 6 hours",
+          "value": ">6"
+        }
+      ]
+    },
+    {
+      "id": "NET_decl_1",
+      "original_id": "NET_decl_1",
+      "primary_scale": "NET",
+      "text": "Я могу долго удерживать внимание на одной задаче без отвлечений",
+      "text_en": "I can sustain attention on a single task for a long time without distraction",
+      "category": "wave_1_5_extension",
+      "register": "declarative",
+      "weight": 1,
+      "weights": {
+        "NET": 0.7,
+        "A": -0.4
+      },
+      "reverse": true,
+      "disabled": false,
+      "wave_introduced": "1.5"
+    },
+    {
+      "id": "NET_beh_1",
+      "original_id": "NET_beh_1",
+      "primary_scale": "NET",
+      "text": "Сегодня я несколько раз брал(а) телефон без конкретной цели",
+      "text_en": "Today I picked up my phone several times without a specific purpose",
+      "category": "wave_1_5_extension",
+      "register": "behavioral",
+      "weight": 1,
+      "weights": {
+        "NET": 0.6,
+        "A": -0.3
+      },
+      "reverse": false,
+      "disabled": false,
+      "wave_introduced": "1.5"
+    },
+    {
+      "id": "SLEEP_decl_1",
+      "original_id": "SLEEP_decl_1",
+      "primary_scale": "SLEEP",
+      "text": "У меня регулярно бывают трудно-объяснимые телесные симптомы (головные боли, проблемы с ЖКТ, усталость)",
+      "text_en": "I regularly have hard-to-explain bodily symptoms (headaches, GI issues, fatigue)",
+      "category": "wave_1_5_extension",
+      "register": "declarative",
+      "weight": 1,
+      "weights": {
+        "SLEEP": 0.8,
+        "D": 0.3,
+        "ID": 0.2
+      },
+      "reverse": false,
+      "disabled": false,
+      "wave_introduced": "1.5"
+    },
+    {
+      "id": "SLEEP_decl_2",
+      "original_id": "SLEEP_decl_2",
+      "primary_scale": "SLEEP",
+      "text": "Я часто просыпаюсь без сил, как будто не спал(а)",
+      "text_en": "I often wake up exhausted, as if I had not slept",
+      "category": "wave_1_5_extension",
+      "register": "declarative",
+      "weight": 1,
+      "weights": {
+        "SLEEP": 0.8,
+        "D": 0.2
+      },
+      "reverse": false,
+      "disabled": false,
+      "wave_introduced": "1.5"
+    },
+    {
+      "id": "SLEEP_beh_1",
+      "original_id": "SLEEP_beh_1",
+      "primary_scale": "SLEEP",
+      "text": "Этой ночью я просыпался(лась) или плохо спал(а) без очевидной причины",
+      "text_en": "This night I woke up or slept poorly without an obvious reason",
+      "category": "wave_1_5_extension",
+      "register": "behavioral",
+      "weight": 1,
+      "weights": {
+        "SLEEP": 0.7,
+        "D": 0.2
+      },
+      "reverse": false,
+      "disabled": false,
+      "wave_introduced": "1.5"
+    }
+  ]
+}

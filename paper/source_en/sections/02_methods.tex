@@ -1,0 +1,191 @@
+\section{Methods}
+\label{sec:methods}
+
+\subsection{Participants}
+
+Data were collected online through the Russian-language DEIC-Inventory. The total sample is $N = 1426$ after removal of invalid responses (less than 80\% completeness, duplicate identifiers, implausible response patterns). Recruitment was via self-selected volunteers through Telegram channels, VK communities, and the researcher's personal networks. Inclusion criteria: age $\geq 18$, Russian as the survey language (non-native speakers were not excluded, but not specifically targeted). No exclusion criteria were imposed.
+
+Participation was anonymous, without identifiers, without compensation. Voluntary informed consent was obtained on the first screen of the questionnaire. Ethics approval: \textit{[to fill]}.
+
+Sample limitations (addressed in §\ref{sec:limitations}): self-selection bias toward a psychologically curious, reflective audience; language specificity; age skew toward 18--37; absence of clinical diagnostic assessments (all diagnoses are self-reported).
+
+\subsection{Instrument}
+
+The DEIC-Inventory is a 131-question self-report instrument, developed iteratively through several waves of qualitative pilot work and quantitative revision. Items are distributed across 14 scale labels: empathy (E), psychopathy (P), suppression (S), dissociation (D), affective isolation (AIS), flattening (F), internal dissonance scale (IDS), masking (M), adverse childhood experience (ACE), childhood alienation (CA), emotional climate (EC), affective-dissociative indicator (ADI), attention (A), and a lie-scale control (Lie).
+
+Response scale: 5-point Likert (1 = ``strongly disagree'' $\to$ 5 = ``strongly agree''). Some items are reverse-coded as a control for response bias.
+
+Innovative instrument features: separation of \emph{declarative} and \emph{behavioral} wordings in paired items (example: ``I believe empathy is important'' --- declarative; ``I often cancel meetings to be with a friend in distress'' --- behavioral); control of structural artifacts via balanced response-scale direction and reverse-coding; a Lie-scale used as a control covariate in partial correlation analyses. The full item-level specification and weights are available in \texttt{questions.json}.
+
+\paragraph{Technical caveat on the Lie covariate.} In wave 1 the Lie scale is operationalized by a single item (LIE\_1: ``I sometimes tell untruths'') with reverse-coding. A single-item operationalization does not permit internal-consistency estimation and constitutes a methodological limitation acknowledged in §\ref{sec:limitations}; Lie is used face-validly as an indicator of self-presentation pressure, without an $\omega$ estimate. Wave 2 expands Lie to $\geq 6$ items with reported reliability (§\ref{subsec:wave2_design}).
+
+\paragraph{Attention check and QC pipeline.} One attention-check item (CONTROL\_1, instructing respondents to select ``Somewhat agree'') is embedded in the instrument. Respondents who fail the attention check are flagged and excluded from latent analyses; the final $N = 1426$ was obtained from a raw $N = 1470$ after QC filtering (attention check, completion $\geq 80\%$, implausible response patterns, fingerprint-based deduplication, and $e2eTestRunId$ filtering).
+
+\paragraph{Three parallel scoring layers.} The exported dataset contains \texttt{raw\_*} (raw sums prior to standardization), \texttt{score\_*} (theoretically weighted composites with multi-factor weights from \texttt{questions.json}), and \texttt{mapped\_*} (0--100 normalized scale for clinical display). All analyses in this paper use the \texttt{score\_*} layer; \texttt{raw\_*} and \texttt{mapped\_*} are preserved for replication convenience and as inputs for external tooling, respectively.
+
+\paragraph{Product-layer labels not used in formal analysis.} The instrument, within its product infrastructure, additionally assigns each respondent (a) an archetypal label from 12 categories (Trickster, Wanderer, Analyst, \dots{}) and (b) a rule-based composite profile tag (\texttt{psychometrics.json.profiles}: e.g., empathicParadox, defensive\_hardness, modestlyBlocked). Neither layer enters the latent analyses of this paper; they are retained in the exported dataset (\texttt{cluster}, \texttt{profiles}, \texttt{ratio} columns) for use in a separate applied publication. An auxiliary field \texttt{score\_maskarading}, a legacy duplicate of \texttt{mapped\_masking}, persists in the wave-1 export and is scheduled for removal in wave 2.
+
+\paragraph{Item-count heterogeneity note.} Seven records show atypical response counts (121, 124, 127, 130 rather than the canonical 122). These are \emph{valid} responses from early pilot versions of the instrument, collected before the item set stabilized in the final 122-active-item configuration. These respondents are \emph{retained} in the analytic sample alongside the others; at the item level, items absent in their version are handled through standard missing-data procedures (listwise for raw composites with a full-coverage criterion, FIML-equivalent for CFA models).
+
+\subsection{Operationalization of the six factors}
+\label{subsec:six_factor_ops}
+
+The present paper works with six content factors drawn from the fourteen scales of the instrument. Below is how each one is constructed for analysis.
+
+\subsubsection{Factors via 6-factor oblique CFA}
+
+The primary operationalization is through latent factors from an exploratory-confirmatory sequence:
+\begin{enumerate}
+    \item EFA with parallel analysis on split-half A ($N = 713$) identified $k = 6$ as the optimal number of factors.
+    \item 6-factor oblique CFA (maximum likelihood, correlated factors) on split-half B ($N = 713$): $\chi^2(120) = 516.04$, $p < .001$, CFI~=~0.950, TLI~=~0.936, RMSEA~=~0.068 (robust bootstrap approximation), $\chi^2/df = 4.30$.
+    \item Latent factor scores were extracted via the empirical Bayes regression method.
+\end{enumerate}
+
+Factors: \textbf{ID} (Internal Dissonance), \textbf{CA} (Childhood Alienation), \textbf{P} (Psychopathy), \textbf{M} (Masking), \textbf{\EAF{}} (Affective Empathy), \textbf{\Ecog{}} (Cognitive Empathy).
+
+Reliability (McDonald's $\omega$ on latent factor scores): ID~=~0.91, CA~=~0.89, P~=~0.93, \EAF{}~=~0.90, \Ecog{}~=~0.89, \textbf{M~=~0.546}. M reliability is emphatically low; no M-specific claims are made in the paper. M is retained in the model as a coordinate for future revision.
+
+\subsubsection{Attention (A): a formative composite}
+
+A is not one of the six factors drawn from the 14-scale instrument. A is constructed as a formative composite on a theoretical schema: 31 items from 9 scales (E, IDS, D, ADI, AIS, S, EC, CA, P) with a-priori coefficients ranging from $+0.4$ to $-0.4$, reflecting each item's theoretical position relative to the witnessing function. The composite:
+\[
+A_i = \sum_{j=1}^{31} w_j \cdot x_{ij}
+\]
+where $w_j$ is the item's theoretical coefficient, $x_{ij}$ is the $z$-standardized response of participant $i$ to item $j$. Items with negative coefficients invert their contribution, so that a high A score denotes elevated witnessing presence.
+
+The coefficients were set through iterative revision with the author's participation; details in \texttt{validate\_attention.py}. In §\ref{sec:results}.7 we empirically check that this formative composite cannot be reduced to a single reflective latent factor.
+
+\subsubsection{Alternative constructions (controls)}
+
+In parallel with the latent factors we used weighted composites (classical implementation via unit weights on primary\_scale). These composites are inflated relative to the latent ones (mean inflation $\sim 0.18$, maximum $0.68$ with sign reversal for P$\leftrightarrow$E); they are reported for comparison, but all content-level conclusions of the paper rest on latent factor scores.
+
+\subsection{Analytic strategy: a reading for non-psychometricians}
+\label{subsec:analytic_primer}
+
+This section is written for readers who come to the paper from clinical practice, theory, philosophy, or the contemplative traditions, and who are not expected to read structural-equation jargon fluently. A psychometrically trained reader can jump directly to §\ref{subsec:stat_approach}. Here --- a short, content-accurate explanation of what each of the analyses the paper leans on actually does, and what cannot be read off them.
+
+\subsubsection{Latent factors: why not just sum responses}
+
+If we want to measure empathy, one can take ten empathy questions, sum the responses, and call the sum empathy. That is a \emph{composite score}; it is useful, but it rests on a structural assumption: that all ten questions capture the same thing in the same proportion, and that the measurement noise in them is independent. In practice, part of the variance of responses is the common construct (\emph{what all ten questions actually capture in common}), and part is specific to a given wording, situation, or response style of the respondent. Latent factor analysis separates these two parts explicitly. A factor is an \emph{unobservable} variable reconstructed from the pattern of correlations among items: the assumption is that if empathy exists, then responses to empathy questions should correlate among themselves more than with responses to, say, psychopathy questions. The strength of association between an item and the factor is called a \emph{factor loading}; operationally, ``how much of this item is about empathy, and how much about something else''. When we later speak of \emph{factor scores}, we mean the estimated position of each respondent on the unobservable axis, computed as a weighted combination of their responses, with weights reflecting the loadings. Unlike composites, factor scores automatically \emph{penalize} noisy items and do not inflate cross-construct correlations via shared variance (see §\ref{sec:limitations} on the scoring artifact of multi-scale weights in composite sums).
+
+\subsubsection{Confirmatory factor analysis; oblique vs.\ orthogonal specifications}
+
+In confirmatory factor analysis (CFA) we \emph{pre-specify} which items load on which factor and test whether that structure holds in the data. In contrast to exploratory factor analysis (EFA), where factors are found ``bottom-up'' from the correlation matrix, CFA works ``top-down'': we have a theory, we have data, and we test their compatibility. The result is a set of \emph{fit indices}, described below.
+
+\emph{Oblique vs.\ orthogonal} is the decision whether to allow factors to correlate. Orthogonal CFA fixes all inter-factor correlations at zero --- mathematically convenient, but almost always wrong in psychology: empathy and psychopathy \emph{do} correlate negatively, ID and CA \emph{do} correlate positively, and forcing these correlations to zero means distorting the data for model simplicity. The oblique CFA we use allows factors to correlate and estimates those correlations directly. This is substantive: inter-factor correlations are part of the result, not a nuisance.
+
+\subsubsection{Fit indices: what they say and what they do not}
+
+When we write ``CFI = 0.950, RMSEA = 0.068, $\chi^2/df = 4.30$'', each number carries a specific intuition.
+
+\textbf{$\chi^2$ statistic} measures how far the observed covariance matrix of items diverges from that predicted by the model. If the model is perfect, the divergence is zero; the larger the divergence, the larger $\chi^2$. The catch: $\chi^2$ grows with sample size; at $N = 1426$ even a very good model is typically rejected by a strict $\chi^2$ test. Hence in modern psychometrics $\chi^2$ is read as description rather than test, and is complemented by relative indices.
+
+\textbf{CFI (Comparative Fit Index)} compares the model to a ``null'' model in which all items are independent (no factor structure at all). CFI = 0.950 means that our model closes 95\% of the distance between the null model and a perfect one. Conventional cutoffs: $\geq 0.95$ good, $\geq 0.90$ acceptable. CFI is much less sensitive to $N$ than $\chi^2$.
+
+\textbf{RMSEA (Root Mean Square Error of Approximation)} is the mean model error per degree of freedom. Intuitively, ``by how much does the model miss the data on average per parameter''. Conventional cutoffs: $\leq 0.05$ good, $\leq 0.08$ acceptable. RMSEA = 0.068 is acceptable for a complex model on real data.
+
+\textbf{$\chi^2/df$} is the ratio of $\chi^2$ to degrees of freedom; a crude check on ``is the misfit bigger than what chance would produce''. $\leq 5$ is acceptable for large samples.
+
+Important caveat, repeated throughout the paper: these indices assume multivariate normality, which our data violate (Mardia $p < 0.0001$). We therefore report both standard maximum-likelihood (ML) indices and robust Satorra--Bentler--corrected ones, and anchor all substantive conclusions on latent factor scores, which are less sensitive to that correction.
+
+\subsubsection{Bifactor models: one general factor plus specific residuals}
+
+In §\ref{subsec:id_bifactor} we apply a \emph{bifactor} model to the five wave-1 scales of passive blocking: \textbf{SUP} (Suppression), \textbf{DIS} (Dissociation), \textbf{AIS} (Affective Isolation Scale), \textbf{FLA} (Flattening), and \textbf{IDS} (Internal Dissonance Scale --- the historical ``parent'' name from which the final latent takes its label, ID). This is a special CFA architecture in which one general factor (ID\textsubscript{g}) loads on \emph{all} items, and, in addition, \emph{orthogonal} specific factors (one per subscale) load only on their ``own'' items. This allows variance to be decomposed algebraically: how much is absorbed by the general construct, and how much remains in subscale-specific residuals. The \textbf{ECV (Explained Common Variance)} metric $= 0.571$ states that 57\% of common factor variance is explained by the general ID; the remaining 43\% sits in specifics. Per-subscale ECV is the same metric computed within one subscale: for SUP (Suppression) it is 0.31, meaning that suppression is to a large extent \emph{not} about general ID but about something of its own. The value of this analysis for wave~2 is a structural basis for item redesign.
+
+\subsubsection{Mediation, moderation, parallel mediation}
+
+\emph{Mediation} answers the question ``through what''. If CA predicts \EAF{} but we hypothesize that the prediction runs not directly but through ID, we test mediation. Formally: path $a$ (CA $\to$ ID), path $b$ (ID $\to$ \EAF{} controlling for CA), direct path $c'$ (CA $\to$ \EAF{} controlling for ID). The indirect effect is $a \cdot b$; the total effect is $a \cdot b + c'$. Statistical significance of the indirect effect is tested via the 95\% bootstrap confidence interval: if the interval excludes zero, mediation is significant.
+
+\emph{Moderation} answers a different question --- ``under what conditions''. A moderator is a variable that changes the \emph{strength} of the association between two other variables. In regression it is an interaction term: ID $\times$ A in the \EAF{} equation. If the interaction coefficient is significant, the strength of ID $\to$ \EAF{} varies with the level of A.
+
+\emph{Parallel mediation} is the extension: one predictor (CA), one outcome (\EAF{}), several mediators (ID, P, M) estimated \emph{simultaneously}. Each obtains its own indirect effect (through itself), and we can test which of them are significant and which are empty. In our case the CA$\to$P$\to$\EAF{} channel turned out empty: it exists formally but carries no variance. Substantively: P is architecturally orthogonal to childhood history.
+
+\subsubsection{Moderated-moderated mediation and the \IMM{} index}
+
+Moderated-moderated mediation is the case in which \emph{both} stages of the mediation channel ($a$ and $b$) are moderated by the same variable. In our central specification, A moderates both CA$\to$ID (the first stage) and ID$\to$\EAF{} (the second stage). Question: do these moderations combine into a coherent picture, or are they independent?
+
+The \textbf{Index of Moderated-Moderated Mediation (\IMM)} \citep{hayes2018} is the product of the two interaction coefficients: $a_{\text{mod}} \times b_{\text{mod}}$. Intuitively, ``by how much does the indirect effect change when the moderator shifts by one unit on both stages at once''. If \IMM{} is significant, the channel as a whole is reorganized by the moderator rather than merely receiving additional noise. Tested via a bootstrap confidence interval.
+
+Key intuition for the reader used to simple interactions: ordinary moderation answers ``does the strength of an association depend on a condition?''; \IMM{} answers ``does the \emph{whole chain} depend on the condition in a single, coherent way?''. This is stronger than simple moderation and weaker than a claim of fully reorganized architecture. Fig.~\ref{fig:imm_intuition} shows this graphically.
+
+\subsubsection{Reflective vs.\ formative constructs}
+
+This distinction carries the entire discussion of A (§\ref{subsec:A_as_field_condition}, §\ref{sec:limitations}). In the classical psychometric model a construct is \emph{reflective}: it is the cause of its indicators. Empathy ``produces'' high answers on empathy items; if you really have empathy, it manifests across several connected behaviors. Three consequences follow: indicators should correlate positively among themselves, should have positive loadings on the general factor, and removing one indicator does not change the meaning of the construct.
+
+A \emph{formative} construct is the reverse: indicators are not consequences but \emph{constituent parts}. A classical example is socioeconomic status: income, education, and occupation are not symptoms of SES, but components from which SES is assembled. Removing income from an SES model changes the construct itself. Indicators of a formative construct need not correlate positively, and loadings can be \emph{bipolar}: if one component is positive and another negative, this is not a contradiction but a structural feature.
+
+In §\ref{sec:results} and §\ref{sec:limitations} we show that A in the present item pool behaves as a formative composite, not a reflective latent: CFA yields bipolar loadings, and substituting a \emph{latent} A into the conditional-mediation equation flips the signs of key coefficients. This is not an analytic failure but evidence that the instrument measures a superposition of two different things (witnessing and trauma hypervigilance), which the theoretically weighted composite separates and a bare CFA does not. The wave-2 task follows: separate these two constructs at the item level.
+
+\subsubsection{Bootstrap intervals and Bayesian posteriors: two ways to express uncertainty}
+
+\textbf{Bootstrap confidence intervals} are a nonparametric way of constructing a confidence interval for a statistic whose sampling distribution is unknown or non-normal. The procedure: from the original sample we draw $N$-sized bootstrap resamples with replacement, recompute the statistic on each, and record. After 2000--5000 iterations we have an empirical distribution of the statistic; the 2.5th and 97.5th percentiles of that distribution bound the 95\% interval. We apply it to indirect effects and \IMM{} because their sampling distributions are products of normals, hence \emph{not} normal.
+
+\textbf{Bayesian posterior} rests on a different logic. Instead of a confidence interval into which ``the true value falls with probability 95\%'', the Bayesian approach yields a \emph{posterior distribution} of the parameter: given the data, how probable is each parameter value. Posterior $=$ prior (beliefs before data) $\times$ likelihood (probability of the data at each parameter value), normalized. The 95\% highest density interval (HDI) is the narrowest interval containing 95\% of the probability mass. $P(\IMM < 0) = 0.97$ literally means: given the data and the prior, the probability that \IMM{} is negative equals 97\%. This formulation is substantively richer than ``the interval excludes zero'', and it is stable across different prior choices, which we demonstrate in §\ref{subsubsec:bayesian_imm}.
+
+\subsubsection{What it all adds up to}
+
+The chain of analyses the reader will see in §\ref{sec:results} follows one logic: \textbf{(1)}~first we establish that six factors are distinguishable (six-factor oblique CFA with acceptable fit indices); \textbf{(2)}~then that they are orthogonally positioned in certain pairs (partial $r$, ID$\perp$P); \textbf{(3)}~then we test the causal cascade these factors form (parallel mediation and conditional-process SEM with two-stage moderation); \textbf{(4)}~we check the robustness of the cascade (Bayesian reanalysis); \textbf{(5)}~we integrate everything into a unified SEM in which it is visible how the channels reorganize under simultaneous estimation; \textbf{(6)}~we distinguish topological subgroups (primary vs.\ secondary psychopathy, the integrated survivor); \textbf{(7)}~we check whether the key moderator (A) works as a reflective latent, and find that it does not --- hence the wave-2 priority. Each step is not an independent test but a refinement of the preceding picture.
+
+\subsection{Statistical approach}
+\label{subsec:stat_approach}
+
+\subsubsection{Tools}
+
+Analysis was performed in Python 3.10. Key libraries: \texttt{pandas}, \texttt{numpy}, \texttt{scipy}, \texttt{scikit-learn}, \texttt{semopy} (CFA, SEM), \texttt{factor-analyzer} (EFA), \texttt{pymc} (Bayesian IMM model). Factor scores and conditional-process SEM were computed in \texttt{semopy}. Bootstrap 95\% CIs (2000--5000 draws depending on model) were used for all indirect effects and \IMM{}.
+
+Fit indices are reported in two forms: (a) classical ML (normal-theory) and (b) Satorra--Bentler T$_1$ scaled $\chi^2$ statistic via \texttt{semopy.stats.calc\_chi2\_sb} with a fourth-moment weight matrix built by \texttt{prepare\_wls} on top of the ML fit. For the six-factor oblique CFA on split-B ($n = 713$): ML $\chi^2(120) = 516.04$, CFI $= 0.950$, TLI $= 0.936$, RMSEA $= 0.068$; Satorra--Bentler scaled $\chi^2_{\mathrm{SB}}(120) = 934.25$, CFI$_{\mathrm{SB}} = 0.873$, TLI$_{\mathrm{SB}} = 0.838$, RMSEA$_{\mathrm{SB}} = 0.098$, scaling factor $c = 0.552$. The atypical $c < 1$ (the ML statistic being deflated relative to the SB-corrected one) and the substantial CFI drop under SB are two independent signals that the reviewer-standard implementation in R's \texttt{lavaan} (MLR, WLSMV on raw ordinal items) is required for final publication; this is flagged in §\ref{sec:limitations} as an infrastructural gap. Substantive conclusions rely on latent factor scores extracted from the ML fit, not on $\chi^2$ per se, and are stable to the robust/classical distinction in that region.
+
+\subsubsection{Conditional-process SEM with A as a two-stage moderator}
+\label{subsubsec:cp_sem}
+
+The central analysis is a moderated-moderated mediation of the CA~$\to$~ID~$\to$~\EAF{} channel with A moderating both stages. Formal model:
+\begin{align}
+\text{ID} &= \beta_0 + a \cdot \text{CA} + \beta_{A_{\text{ID}}} \cdot A + a_{\text{mod}} \cdot (\text{CA} \times A) + \varepsilon_1 \\
+\text{\EAF{}} &= \beta_0 + b \cdot \text{ID} + c' \cdot \text{CA} + \beta_{A_{\text{E}}} \cdot A + b_{\text{mod}} \cdot (\text{ID} \times A) + \varepsilon_2
+\end{align}
+Index of moderated-moderated mediation: $\IMM = a_{\text{mod}} \times b_{\text{mod}}$. \IMM{} is tested via a bootstrap 95\% CI; a non-zero-excluding CI indicates significant moderation of both stages simultaneously.
+
+\subsubsection{Parallel mediation CA $\to$ \{ID, P, M\} $\to$ \EAF{}}
+
+A direct test of the two-channel architecture: a single SEM with CA as predictor, \EAF{} as outcome, and ID, P, M as three parallel mediators. Estimated on latent factor scores of split-B ($n = 710$). Bootstrap 5000 iterations. Reported: $a$-paths (CA $\to$ mediator), $b$-paths (mediator $\to$ \EAF{} controlling for the rest), indirect effects through each mediator with CIs, contrast tests between pairs of indirect effects, direct $c'$.
+
+\subsubsection{Unified SEM: all paths simultaneously}
+
+The most comprehensive specification combines the parallel mediation (§\ref{subsubsec:cp_sem}) with the A-moderation. CA predicts ID (with A as main effect and CA$\times$A as moderator), P and M (both linearly from CA without A-moderation). \EAF{} is regressed on all three mediators, plus A (main effect), plus ID$\times$A (the $b$-moderation), plus $c'$ (direct CA effect). 2000 bootstrap draws. Nested comparison (M0: E~$\sim$~CA; M1: +\{ID, P, M\}; M2: +A main; M3: +ID$\times$A) via $F$, AIC, and BIC tests.
+
+\subsubsection{Bayesian reanalysis of the key IMM}
+
+Anticipating reviewer skepticism about the frequentist CI touching zero at its upper edge, we repeated the conditional-process model (§\ref{subsubsec:cp_sem}) in a Bayesian specification via PyMC, NUTS sampler, 4 chains $\times$ (2000 tune + 4000 draws) = 16000 post-warmup draws, all $\hat{r} = 1.00$. Three priors are compared: flat (Normal(0, 100) on all coefficients), weakly informative (Normal(0, 1)), sceptical (Normal(0, 0.1) on both interactions $a_3$, $b_5$). We report posterior mean, 95\% HDI, and $P(\IMM < 0)$.
+
+\subsubsection{Two-tier A-CFA (Tier 5 and 5b)}
+
+Confirmation of the formative nature of A was carried out via a staged A-CFA.
+\begin{description}
+    \item[Tier 5] --- three variants of single-factor reflective CFA: (a) full model (all 31 A-weighted items); (b) core model (items with $|w_A| \geq 0.3$, $n = 18$); (c) purest model (17 metacognitive self-observation items, selected by content).
+    \item[Tier 5b] --- two-factor CFA on the purest-17 set after bipolar loadings emerged: A\_presence (8 items: positive phenomenology) vs.\ A\_absence (9 items: dissociation phenomenology), correlated factors.
+\end{description}
+Both A-CFA procedures are run in parallel, and the resulting factor scores are substituted into the conditional-process SEM to check whether the latent-A reproduces the signal obtained on the composite.
+
+\subsubsection{Supplementary validations}
+
+\begin{itemize}
+    \item \textbf{Split-half:} EFA on the A-half ($N = 713$), CFA on the B-half ($N = 713$), seed = 42 for reproducibility.
+    \item \textbf{Gender invariance:} configural $\to$ metric $\to$ scalar through chain-constrained CFA with sequential model comparison ($\Delta$CFI, $\Delta$RMSEA criteria).
+    \item \textbf{Partial correlations} with the Lie scale as a covariate --- a control for socially desirable responding.
+    \item \textbf{Network psychometrics} (graphical lasso): partial correlation network on the six factors, $\gamma = 0.5$ regularization.
+    \item \textbf{ROC analyses:} predictive performance of each factor for self-reported clinical diagnoses, with 95\% AUC CIs via the DeLong method.
+\end{itemize}
+
+\subsection{Derivation of auxiliary constructs}
+
+\subsubsection{Primary vs.\ secondary psychopathy (topological $2\times 2$)}
+
+A rule-based classification motivated by \citet{karpman1941}: a participant counts as \emph{primary-like} if P > median, \EAF{} < median, ID < median, CA < median; as \emph{secondary-like} if P > median, \EAF{} < median, ID > median, CA > median. No prior claim of categorical kinds --- the classification is technically dimensional-based thresholding.
+
+\subsubsection{Integrated survivor (hi-CA $\times$ hi-A)}
+
+A participant is classified as \emph{integrated-survivor-like} if CA > 75th percentile and A > 75th percentile. This threshold is stricter than a median split, in order to isolate a pronounced profile; results with a median split are available in the Supplementary materials.
+
+\subsection{Transparency and pre-registration}
+
+The present analysis is post-hoc relative to the initial instrument design. We explicitly flag this in every result where the post-hoc nuance is relevant. A pre-registered replication on a new sample is the obligatory next step (described in \texttt{PROGRAM\_STRUCTURE.md}). All analysis scripts and intermediate CSV files are published under \texttt{analysis\_output/fresh\_analysis/}; the anonymized raw dataset is under \texttt{data/anonymized/}.

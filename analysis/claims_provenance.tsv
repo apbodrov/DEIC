@@ -1,0 +1,30 @@
+section	label	claim	source_file	date
+§2.1	methods	N=1426 analytic sample, 131 items, 6-factor structure	articles/main_article/analysis_output/deic_scores_N1551.csv; fresh_analysis/composites.csv	2026-04-17
+§3.2	subsec:six_factor_cfa	Six-factor oblique CFA CFI=0.950, RMSEA=0.068, chi2(120)=516.04	fresh_analysis/mlr_robust_6factor_cfa.json (ML block); fresh_analysis/tier1_analyses_summary.json	2026-04-20
+§3.3	subsec:p_id_channels	P↔E_AF latent correlation (zero-order) = -0.41	fresh_analysis/mlr_robust_6factor_cfa.json (factor correlations); fresh_analysis/tier2_network_partialcorr.csv	2026-04-20
+§3.3	subsec:p_id_channels	Partial r(P, E_cog) = +0.32 (network graphical lasso, γ=0.5)	fresh_analysis/tier2_network_partialcorr.csv (P,E cell = 0.3214); CONSOLIDATED_REPORT_v5.md §network	2026-04-20
+§3.4	subsec:conditional_process	A moderates a-path: a_mod=-0.033 CI [-0.068,-0.003]	fresh_analysis/bayesian_imm_posterior.csv (frequentist block); CONSOLIDATED_REPORT_v5.md §Tier 4.4	2026-04-18
+§3.4	subsec:conditional_process	A moderates b-path: b_mod=+0.060	fresh_analysis/bayesian_imm_summary.json	2026-04-18
+§3.4	subsec:conditional_process	IMM = -0.00197 CI [-0.00533,-0.00005] (narrow spec)	fresh_analysis/bayesian_imm_summary.json; CONSOLIDATED_REPORT_v5.md	2026-04-18
+§3.4	subsec:conditional_process	Bayesian P(IMM<0) = 96–97% across three priors	fresh_analysis/bayesian_imm.py; bayesian_imm_posterior.csv	2026-04-18
+§3.5	subsec:unified_sem	Parallel mediation: CA→P=+0.015 NS, CA→ID=+0.668, CA→M=+0.195; b-paths: ID→E_AF=-0.334, P→E_AF=-0.889, M→E_AF=+0.179	fresh_analysis/parallel_mediation_summary.json; parallel_mediation.py output	2026-04-20
+§3.5	subsec:unified_sem	c=−0.129, c'=+0.073 (sign flip parallel mediation)	fresh_analysis/parallel_mediation_summary.json	2026-04-18
+§3.6	subsec:integrated_survivor	CA-hi × A-hi integrated survivor E_AF = +0.37 (n=118/710, 17%)	fresh_analysis/composites.csv; CONSOLIDATED_REPORT_v5.md §Tier 4.5	2026-04-18
+§3.7	subsec:primary_secondary	Primary (hi-P × lo-ACE) n=144; secondary (hi-P × hi-ACE) n=65 with ID=+0.90 CA=+0.98	analysis_output/EXTRA_ANALYSES_REPORT.md §EX-5; fresh_analysis/composites.csv	2026-04-18
+§3.8	subsec:a_cfa	A-CFA purest 17 items CFI=0.866 RMSEA=0.081 ω_abs=0.947	fresh_analysis/tier5_acfa_summary.json; fresh_analysis/a_validation_summary.json	2026-04-18
+§3.8	subsec:a_cfa	Latent-A IMM = -0.00044 CI [-0.00267,+0.00052] NS	fresh_analysis/tier5_acfa_summary.json	2026-04-18
+§3.9	subsec:id_bifactor	Bifactor CFI=0.925, ECV_global=0.571, SUP ECV=0.31	fresh_analysis/id_bifactor.py; id_bifactor_summary.json; id_bifactor_loadings.csv	2026-04-19
+§3.10	subsec:clinical_subgroup_patterns	H2 clinical subgroups: PTSD/BPD/Mood/Selfharm 4-pattern table	analysis_output/h2_subgroup_mediation.csv; HYPOTHESES_H1-H5_REPORT.md §H2	2026-04-17
+§3.11	subsec:bipolar_experiment	Bipolar natural experiment N=51, c'=+0.404 p<10^-4	analysis_output/QUEUE_Q1_Q10_NEW1_NEW4_REPORT.md §NEW-4	2026-04-17
+§3.12	subsec:gender_moderation	Gender: D×male β=+0.189 p=0.002	analysis_output/q4_gender_mediation.txt	2026-04-28
+§3.13	subsec:age_invariance_numbers	Age 6-bin invariance + EX-6 P-trait β=-0.007 R²=0.0002	analysis_output/ex9_age_suppressor.csv; EXTRA_ROUND2_REPORT.md §EX-9; EXTRA_ANALYSES_REPORT.md §EX-6	2026-04-18
+§3.14	subsec:free_text_convergent	manipulation_callousness N=10, d_P=+2.32, AUC=0.964	fresh_analysis/free_text_convergent.py; FREE_TEXT_EXPANDED_CATEGORIZATION.md	2026-04-18
+§3.15	subsec:roc_dx	ROC: trauma cluster AUC 0.69-0.76, mood/anxiety 0.58-0.61, P AUC ≤0.42, A AUC ≤0.46 (P predicts non-reporting)	article_tex/sections/03_results.tex §subsec:roc_dx (range estimates from cluster-level ROC pass; original point AUCs in HYPOTHESES_H1-H5_REPORT.md and h5_interactions.txt)	2026-04-28
+§3.16	subsec:dx_count_bias	R²(dx_count ~ D) = 0.006; β_P = −0.012 p<0.001 in joint model	analysis_output/EXTRA_ROUND2_REPORT.md §EX-7	2026-04-18
+§S1.1	supp:round3	LPA k=2 under BIC: cluster 1 n=90 (5.8%) P-pole	analysis_output/q7_LPA.txt	2026-04-17
+§S1.2	supp:round3	ADI r(D)=+0.806, r(P)=+0.065 — collapses into D	analysis_output/EXTRA_ROUND2_REPORT.md §EX-8	2026-04-18
+§S1.3	supp:round3	DI vs Lie contrast d=0.00 p=0.99; DI ~ A+P+D+Lie+ACE R²=0.41	analysis_output/q5_DI_predictors.txt	2026-04-17
+§S1.4	supp:round3	Octants 8/16 filled; hi-E+hi-P+hi-D+low-A n=3	analysis_output/EXTRA_ANALYSES_REPORT.md §EX-5 (wife-N3); fresh_analysis/composites.csv	2026-04-18
+§S1.5	supp:round3	Piecewise ACE→E_AF knot=80; ΔAIC=-5.37	analysis_output/q6_burning_spline.txt	2026-04-17
+§S1.6	supp:round3	Network centrality GLasso: ACE=3.43, F=3.42, D=3.11	analysis_output/q10_partial_correlations.csv	2026-04-17
+§6	subsec:limitations_befriends	befriends-psychopaths archetype n=3 (wife-type, EX-5)	analysis_output/EXTRA_ANALYSES_REPORT.md §EX-5	2026-04-18

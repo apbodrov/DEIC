@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.blg
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Local-only data
+data/
+*.csv.gz
+
+# Build outputs
+build/
+dist/

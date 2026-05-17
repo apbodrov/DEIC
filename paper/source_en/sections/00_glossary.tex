@@ -1,0 +1,90 @@
+\section*{Glossary: DEIC and Key Terms}
+\label{sec:glossary}
+\addcontentsline{toc}{section}{Glossary}
+
+This paper was written at the intersection of psychometrics, clinical psychology, and contemplative traditions. To keep readers from getting caught on technical vocabulary, brief definitions are collected here. Each term is introduced in the main text with its English expansion on first use; abbreviated forms are used thereafter in tables and formulas.
+
+\subsection*{Central DEIC constructs}
+
+\begin{description}
+    \item[DEIC] \textit{Dynamic Empathy and Inner Conflict} --- the name of the measurement framework and of the 131-item instrument derived from it.
+    \item[ID (Internal Dissonance)] \textbf{internal dissonance} --- a state in which an empathic response has already begun but is then blocked because the affective material is intolerable \emph{in itself}, whether someone else's or one's own; these two directions are symmetrical in ID and reflect a single containing function. Experienced as ``I want to feel but I cannot,'' not only toward another but toward oneself. A passive defense, a low ``permission'' for feeling in both directions simultaneously.
+    \item[CA (Childhood Alienation)] \textbf{childhood alienation} --- early family-emotional history: absence of responsiveness from significant adults, inability to be oneself, a pervasive sense of unsafety in one's closest circle. Not a sum of traumatic events but a climate.
+    \item[P (Psychopathy)] \textbf{psychopathic pattern} --- an architecture in which empathy is \emph{not blocked} but \emph{conditional}: I feel whoever I choose to feel, and I can ``switch'' that channel at will. In DEIC, a morally neutral coordinate, not a diagnosis.
+    \item[M (Masking)] \textbf{masking} --- social presentation that diverges from inner state. The current scale is weak ($\omega = 0.55$); it will be redesigned in wave 2.
+    \item[E\textsubscript{AF} (Affective Empathy)] \textbf{affective empathy} --- capacity for direct emotional resonance: another's pain registers in one's own body as one's own.
+    \item[E\textsubscript{cog} (Cognitive Empathy)] \textbf{cognitive empathy} --- capacity to understand another's inner state as a model, as a mental map, without obligatory bodily resonance. The kind of empathy that can be trained, and that is used by the interrogator, the psychopath, and the skilled therapist --- each in their own way.
+    \item[A (Attention / Witnessing)] \textbf{witnessing attention, presence} --- a metacognitive capacity to observe one's own states without merging with them. Closest to what contemplative traditions call satipa\d{t}\d{t}h\=ana (Buddhism), s\=ak\d{s}\=i (Advaita), rigpa (Dzogchen), self-remembering (Gurdjieff). In DEIC, not content but the condition of observation.
+\end{description}
+
+\subsection*{Psychometric methods}
+
+\begin{description}
+    \item[Latent factor] --- a hypothesized inner characteristic that cannot be measured directly but can be reconstructed from the collective pattern of responses to a set of items. ``Conscientiousness,'' for example, is not a single question but the common element joining answers across a dozen items.
+    \item[EFA] \textit{exploratory factor analysis} --- ``how many latent characteristics are needed to account for the structure of the responses?'' Used when theory does not yet fix the number of factors.
+    \item[CFA] \textit{confirmatory factor analysis} --- ``do the items group as theory predicts?'' A test, not an exploration.
+    \item[SEM] \textit{structural equation modeling} --- a method in which several regressions are estimated simultaneously, with latent variables and paths among them. Permits questions such as ``does predictor A affect outcome C directly, or only through mediator B?''---answered within a single system of equations.
+    \item[Reflective latent] --- the classical model: the latent factor \emph{generates} its observed items; changes in factor level are reflected across all items simultaneously. Items are interchangeable indicators.
+    \item[Formative composite] --- the opposite construction: a set of heterogeneous items \emph{sum} into a resultant quantity that does not reflect a single underlying property. Removing an item changes the meaning of the composite. A in DEIC is organized in exactly this way.
+    \item[Factor score] --- the estimated value of a latent factor for each participant, derived from CFA; used as a variable in subsequent analyses.
+    \item[$\omega$ (McDonald's omega)] --- a modern measure of internal consistency (reliability), the preferred alternative to Cronbach's $\alpha$. Values above $0.80$ are acceptable; above $0.90$, high reliability.
+    \item[Parcels] --- aggregated mini-composites of 3--5 items each, used in place of raw items in CFA. Reduce the number of model parameters and smooth item-level noise.
+    \item[Two-level scoring (DEIC wave 2)] --- a proposed instrument architecture in which each item carries \emph{two} technical fields: \texttt{factor\_weights} (a vector of weights across several factors, used in CFA/SEM, preserving the item's theoretical multidimensional content) and \texttt{primary\_scale} (the single factor into which the item enters under composite sum-scoring). The separation eliminates the algebraic inflation of between-composite correlations characteristic of naive multi-scale scoring, while preserving multi-scale weights as a \emph{theoretical} a priori declaration. Distinct from ``one item = one factor'' in that cross-loadings remain within the model rather than being struck out.
+\end{description}
+
+\subsection*{Causal path analysis}
+
+\begin{description}
+    \item[Mediation] --- the situation in which A affects C not directly but \emph{through} an intermediate variable B. Example: childhood alienation affects affective empathy not directly but through the formation of internal dissonance.
+    \item[a-path] --- the link A $\to$ B (predictor acts on mediator).
+    \item[b-path] --- the link B $\to$ C (mediator acts on outcome).
+    \item[Direct effect (c$'$)] --- the portion of the influence of A on C that remains after the mediator is taken into account.
+    \item[Indirect effect] --- the portion of the influence of A on C that passes through the mediator (the product a $\cdot$ b).
+    \item[Moderation] --- the ``under what conditions'' situation: the effect of A on B is not constant but depends on the level of a third variable M. In DEIC, A moderates both the a-path (CA $\to$ ID) and the b-path (ID $\to$ E\textsubscript{AF}).
+    \item[Interaction (A $\times$ B)] --- the formal expression of moderation in regression: the product of two variables, whose coefficient indicates the nonlinearity of their joint effect.
+    \item[IMM] \textit{index of moderated-moderated mediation} --- the product of two interaction coefficients ($a_{\text{mod}} \times b_{\text{mod}}$). If IMM differs significantly from zero, the moderator acts on the \emph{entire chain} A$\to$B$\to$C simultaneously, not on a single link. In DEIC, a negative IMM means that high witnessing attention breaks the cascade ``trauma $\to$ dissonance $\to$ empathy block'' at both ends at once.
+    \item[Bootstrap] --- a procedure of repeated resampling with replacement (typically 2{,}000--5{,}000 replicates) used to estimate confidence intervals for complex coefficients when a closed-form solution is unavailable.
+    \item[95\,\% CI (confidence interval)] --- the range within which the true value of the coefficient is located with 95\,\% probability. If the CI excludes zero, the effect is significant at $p < 0.05$.
+\end{description}
+
+\subsection*{Model fit indices}
+
+\begin{description}
+    \item[$\chi^2$ (chi-square)] --- a statistic of model--data discrepancy. On its own, almost always significant in large samples; therefore evaluated together with the indices below.
+    \item[df (degrees of freedom)] --- the number of independent constraints against which the model is tested; higher df implies a more parsimonious model.
+    \item[CFI] \textit{comparative fit index} --- $>0.90$ acceptable, $>0.95$ good.
+    \item[TLI] \textit{Tucker--Lewis index} --- related to CFI, slightly stricter with respect to model complexity.
+    \item[RMSEA] \textit{root mean square error of approximation} --- $<0.06$ good, $<0.08$ acceptable, $>0.10$ poor.
+    \item[Satorra--Bentler scaling] --- a correction to the chi-square for nonnormal data; especially important for Likert-type responses.
+    \item[MLR] \textit{robust maximum likelihood} --- an estimation method with standard errors robust to nonnormality. A reviewer-level standard for survey data; requires R/lavaan.
+\end{description}
+
+\subsection*{Clinical and theoretical terms}
+
+\begin{description}
+    \item[ACE] \textit{adverse childhood experiences} --- a scale of adverse childhood experiences; used in DEIC as a covariate and as a component of composites.
+    \item[Primary psychopathy (Karpman, 1941)] --- a type with low internal dissonance and no pronounced childhood trauma; ``constitutional'' coldness, minimal emotional reactivity.
+    \item[Secondary psychopathy] --- the same psychopathic pattern of switchable empathy, but with high ID and high CA; a ``trauma-born'' path with a fundamentally different therapeutic profile.
+    \item[Integrated survivor] --- a profile with high CA (severe childhood) and high A (developed attentional work); in our sample this profile exhibits the \emph{highest} affective empathy. The empirical anchor for the thesis ``trauma is not a verdict.''
+    \item[Hyper-instrumentation] --- the hypothesis (Blair, Baron-Cohen) that the psychopathic pattern does not \emph{reduce} but \emph{sharpens} cognitive empathy, using it as an instrument. In DEIC this is supported by the positive partial correlation $r(\text{P}, \text{E}_{\text{cog}}) = +0.32$ after controlling for shared sources of variance.
+    \item[Free will (operational)] --- in DEIC, not a binary metaphysical property and not an illusion, but a \emph{graded operational variable}: the magnitude of the gap between the automatic stimulus--response coupling (the working of the D/P/E configuration) and the observation of that coupling (A). Zero A $\Rightarrow$ behavior is functionally determined by the current configuration; high A $\Rightarrow$ the space of choice grows, in proportion to the momentary capacity to hold a witnessing stance. This is an operationalization of what traditions describe as ``awakening,'' ``liberation,'' ``slave of the will,'' ``self-remembering''; not a solution to the metaphysical problem of free will but a refocusing of it into a measurable psychological variable.
+\end{description}
+
+\subsection*{Contemplative references}
+
+\begin{description}
+    \item[Satipa\d{t}\d{t}h\=ana] (P\=ali Buddhism) --- ``establishment of mindfulness''; the systematic practice of observing body, feelings, states of mind, and phenomena.
+    \item[S\=ak\d{s}\=i] (Advaita Ved\=anta) --- ``the witness''; that in experience which remains unchanging as contents shift.
+    \item[Rigpa] (Tibetan Dzogchen) --- knowing-presence, nondual awareness prior to the subject--object split.
+    \item[Self-remembering] (Gurdjieff, the Fourth Way) --- the practice of holding self-awareness in parallel with engagement in action; the closest Western equivalent of witnessing.
+    \item[Anti-Wilber (disciplinary rule)] --- the refusal of a hierarchical ``master map'' overlaid on traditions. DEIC is positioned as an operational dialect of what traditions have already seen, not as a meta-map above them.
+\end{description}
+
+\subsection*{Neuroscientific references}
+
+\begin{description}
+    \item[DMN] \textit{default mode network} --- active during mind-wandering and self-referential processes. A candidate neural correlate of what A in DEIC measures at the phenomenological level.
+    \item[Predictive coding] --- a neuroscientific framework in which the brain operates as a device that continuously predicts its sensory input and corrects its model by prediction errors. Used in this paper as a candidate account of the difference between ID (bottom-up overload) and P (top-down model selection).
+\end{description}
+
+\clearpage

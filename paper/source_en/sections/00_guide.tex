@@ -1,0 +1,117 @@
+\section*{How to read this paper}
+\addcontentsline{toc}{section}{How to read this paper}
+\label{sec:reading_guide}
+
+The paper is long and structured in layers. Different readers come with different interests; below is a short map of which sections carry the most content for each audience, and how one might read the paper non-linearly along a personal route.
+
+\begin{center}
+\begin{tabular}{p{0.33\linewidth}p{0.60\linewidth}}
+\toprule
+\textbf{If you come from\dots} & \textbf{Minimal reading route} \\
+\midrule
+\textbf{clinical practice} & §\ref{subsec:architecture} (architecture of coupling; primary vs secondary psychopathy), §\ref{subsec:integrated_survivor} (integrated survivor), §\ref{sec:limitations} (what the model does not support), §\ref{sec:falsification} C.1--C.2 \\
+\midrule
+\textbf{psychometrics} & §\ref{sec:methods}, §\ref{sec:results} 3.1--3.10, §\ref{sec:falsification} Tier A, §\ref{sec:limitations}.3 (statistical limitations) \\
+\midrule
+\textbf{contemplative or psychodynamic tradition} & §\ref{subsec:A_as_field_condition} (A as field condition), §\ref{subsec:positioning} (positioning against Wilber), §\ref{sec:falsification} D.1 \\
+\midrule
+\textbf{moral philosophy and law} & §\ref{subsec:architecture} (architecture vs deficit), §\ref{sec:falsification} D.2 (P as an orthogonal moral layer) \\
+\midrule
+\textbf{methodology and open science} & §\ref{sec:methods}~--~\ref{subsec:analytic_primer} (primer), §\ref{sec:falsification} (falsification commitments), §\ref{sec:limitations} (self-selection, self-report, cross-sectional) \\
+\midrule
+\textbf{theory and program} & \S\ref{sec:discussion}, §\ref{sec:future}, \texttt{PROGRAM\_STRUCTURE.md} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\paragraph{A brief reference for the six factors.} To avoid returning to the definitions each time, below is a one-page summary of what each of the six published factors measures, its reliability in our data, and its conceptual roots.
+
+\begin{center}
+\small
+\begin{tabular}{p{0.08\linewidth}p{0.22\linewidth}cp{0.23\linewidth}p{0.30\linewidth}}
+\toprule
+\textbf{Factor} & \textbf{What it measures} & \boldmath$\omega$ & \textbf{Wave-1 parent} & \textbf{Key lines of thought} \\
+\midrule
+ID & Internal dissonance: affective response is triggered but does not complete; conflict between affective impulse and blocking & 0.91 & IDS (Internal Dissonance Scale) + S, D, AIS, F as surface manifestations & \citet{ferenczi1933, klein1946, fonagy2002}; defenses as a network \citep{digiuseppe2024} \\
+\midrule
+CA & Childhood alienation: early relational history in which the child's inner states did not meet an adequate response & 0.89 & ACE + CA merged into a single latent & \citet{bowlby1969, main1986, fonagy2002}; early neglect as a predictor of defensive architecture \\
+\midrule
+P & The moral narrative ``this is permitted to me'': a layer of permission to instrumentally use others, structurally separable from affective architecture & 0.93 & P wave-1 (unchanged) & \citet{cleckley1941, hare1991, blair2013, baroncohen2011}; LSRP \citep{levenson1995} \\
+\midrule
+M & Masking: a regulatory layer between internal state and external presentation. \textbf{Poorly differentiated} ($r_{\mathrm{lat}}(M, P) = +0.82$); carries no independent claims & 0.55 & MS wave-1 & Impression management; redesign scheduled for wave~2 \\
+\midrule
+\EAF{} & Affective empathy: automatic resonance with another's state & 0.90 & E (general), post-hoc split & \citet{davis1983, shamaytsoory2011, decety2011} \\
+\midrule
+\Ecog{} & Cognitive empathy: recognition and understanding of others' mental states without mandatory affective resonance & 0.89 & E (general), post-hoc split & \citet{baroncohen2011, shamaytsoory2011} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Plus the seventh construct --- \textbf{attention (A)}, operating as a formative composite (not a reflective latent), instrumented through 31 items drawn from 9 scales with theoretically weighted coefficients. A is not a content of the psyche but a condition of its organization (§\ref{subsec:A_as_field_condition}). A dedicated A-scale is planned for wave~2.
+
+\paragraph{The D--P--A architectural triad.} In the working language of the paper and the broader program we use the short label \textbf{D--P--A} for three content-distinct axes of the architecture. The label is an inheritance from the earliest instrument versions, in which \textbf{D} denoted the general \emph{Defense} bundle --- an aggregate of all defensive subscales (suppression, dissociation, affective isolation, flattening, internal dissonance), not any single one of them. In the current model the functional role of this bundle is carried by the latent \textbf{ID}: the same set of defenses absorbed into a single psychometric construct on the basis of empirically high mutual correlations among subscales ($r = 0.77$--$0.94$) and convergence with network-analytic results on defenses \citep{digiuseppe2024}. We keep the three-letter label because it is content-convenient: it names three functionally and ontologically distinct layers of one system.
+
+\begin{center}
+\begin{tabular}{clp{0.62\linewidth}}
+\toprule
+\textbf{Axis} & \textbf{Latent} & \textbf{Function} \\
+\midrule
+\textbf{D} & ID & \textbf{Passive} non-coupling. The affective signal is triggered but does not propagate: blocking, suppression, dissociation, affective isolation, affective flattening as surface manifestations of one field. Etiologically --- via CA (childhood alienation). Ego-dystonic: the subject \emph{wants} to feel but cannot. \\
+\midrule
+\textbf{P} & P & \textbf{Active} non-coupling. Affective resonance is structurally available but fires conditionally; accompanied by the moral narrative ``this is permitted to me''. Etiologically --- orthogonal to CA at the population level. Ego-syntonic: the subject \emph{chooses} not to feel. \\
+\midrule
+\textbf{A} & A (formative) & \textbf{Condition of the field}, not its content. The witnessing relation, metacognitive awareness. Ontologically asymmetric to D and P: not one more function, but the mode in which other functions exist. In our data --- moderator of both stages of the CA$\to$ID$\to$\EAF{} channel (in the narrow specification) and the main positive predictor of \EAF{} in the unified model. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Accordingly, when the text speaks of ``the D-channel'' or ``the D-pattern'' it refers to the passively-blocking architecture anchored psychometrically by the ID latent; ``the P-channel'' refers to the active-narrative architecture; ``the A-layer'' refers to the witnessing meta-level. Type descriptions follow from this: primary psychopathy --- \textbf{P without D}; secondary psychopathy --- \textbf{P with D}; integrated survivor --- \textbf{D with A}; baseline empathic pattern --- \textbf{neither D nor P}.
+
+\paragraph{Methodological glossary.} To avoid translating technical terms inline, the table below records the canonical Russian--English correspondences for the methodological vocabulary used in the paper. Where an English term is preserved in both versions (acronyms, names), this is marked.
+
+\begin{center}
+\small
+\begin{tabular}{p{0.38\linewidth}p{0.56\linewidth}}
+\toprule
+\textbf{Russian term in the original} & \textbf{English equivalent / clarification} \\
+\midrule
+подтверждающий факторный анализ, CFA & confirmatory factor analysis (CFA) \\
+эксплоративный факторный анализ & exploratory factor analysis (EFA) \\
+косоугольная / ортогональная CFA & oblique / orthogonal CFA \\
+латентный фактор, латентная переменная & latent factor / latent variable \\
+факторная нагрузка & factor loading \\
+факторные оценки & factor scores \\
+индексы соответствия & fit indices \\
+индекс сравнительного соответствия & Comparative Fit Index (CFI) \\
+средняя ошибка аппроксимации & Root Mean Square Error of Approximation (RMSEA) \\
+бифакторная модель & bifactor model \\
+доля объяснённой общей дисперсии & Explained Common Variance (ECV) \\
+иерархическая омега & hierarchical $\omega$ \\
+главный эффект / эффект взаимодействия & main effect / interaction effect \\
+модерация & moderation \\
+медиация & mediation \\
+параллельная медиация & parallel mediation \\
+непрямой эффект / путь~$a$, путь~$b$, прямой путь $c'$ & indirect effect / $a$-path, $b$-path, direct path $c'$ \\
+модерированная медиация & moderated mediation \\
+двойно-модерированная медиация & moderated-moderated mediation \\
+индекс двойно-модерированной медиации & Index of Moderated-Moderated Mediation (\IMM) \\
+объединённое структурное уравнение & unified SEM \\
+бутстрэп / бутстрэповский доверительный интервал & bootstrap / bootstrap confidence interval \\
+апостериорное распределение, байесовский постериор & Bayesian posterior \\
+приор, априорное распределение & prior \\
+95\%-ный интервал наивысшей плотности & 95\% highest density interval (HDI) \\
+масштабирующий множитель, коррекция Саторра--Бентлера & Satorra--Bentler scaling factor \\
+рефлексивный / формативный конструкт & reflective / formative construct \\
+контроль переменной, частная корреляция & partialling / partial correlation \\
+робастность, проверка устойчивости & robustness check \\
+метод расщеплённой половины & split-half method \\
+инвариантность измерения & measurement invariance \\
+конфигуральная / метрическая / скалярная инвариантность & configural / metric / scalar invariance \\
+характеристическая кривая, площадь под кривой & ROC curve / area under the curve (AUC) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\paragraph{What this paper does not do.} To prevent misdirected expectations: this is \emph{not} a longitudinal study, \emph{not} a clinically validated scale with cut-off scores, \emph{not} a cross-cultural validation, \emph{not} an attempt to replace DSM. It is the first empirical validation of a six-factor architecture on a Russian-language online sample, with an explicit list of what subsequent waves of the program will have to test (§\ref{sec:falsification}, §\ref{sec:future}). Cross-sectional, self-report, monolingual.
+
+\clearpage

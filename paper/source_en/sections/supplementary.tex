@@ -1,0 +1,97 @@
+% ======================================================================
+% Supplementary materials --- methodological checks not central to the core claims
+% Extracted from §Results 2026-04-20 to keep the main narrative focused.
+% All ref labels from the main text remain valid (\ref{subsec:limitations_befriends},
+% \ref{subsec:conditional_process}, \ref{subsec:unified_sem}).
+% ======================================================================
+
+\appendix
+\section*{Appendix S1. Additional methodological checks}
+\label{supp:round3}
+
+Contents of this appendix: LPA/GMM on the four composites; the status of ADI as an independent axis; DI vs.\ the Lie scale; octant map of free-field categories; a piecewise-linear ``burning empath'' trajectory; network centrality after GLasso. Each observation supports or refines one of the main findings of §Results, but does not carry an independent claim weight at the level of the headline results.
+
+\subsection*{S1.1 LPA / GMM on the four composites}
+Latent profile analysis on E, P, D, A under BIC selects $k=2$. Cluster 0 ($n = 1461$, ``normal''): $E = 55.8$, $P = 42.5$, $D = 52.2$, $A = 55.1$. Cluster 1 ($n = 90$, $5.8\,\%$ of the sample): $E = 40.2$, $P = 65.2$, $D = 55.9$, $A = 42.9$---the P pole. Of the 90 people in cluster 1, 54 fall into the ``low E / high P'' quadrant in the 2D projection. That is, even a pure mixture model on four scales, without a priori labels, isolates the psychopathic contour as an independent natural class. Extension to $k=3, 4, 5$ under BIC does not yield an improvement that can be relied on: $k=3$ gives $\Delta\mathrm{BIC} = -32$, but the third cluster is a tiny $n = 14$ ``dissociated low-A'' subgroup, structurally not new relative to the high-D subsample.
+
+\subsection*{S1.2 ADI is not an independent axis}
+The Anti-Dissociation Index (ADI), treated in part of the psychometric literature as an independent construct, nearly coincides with $D_{\mathrm{score}}$ in our data: $r(\mathrm{ADI}, D) = +0.806$, $r(\mathrm{ADI}, \mathrm{AIS}) = +0.770$, $r(\mathrm{ADI}, \mathrm{IDS}) = +0.786$, $r(\mathrm{ADI}, P) = +0.065$ (nearly zero). ADI is a convolution of the blocking belt, not a separate latent coordinate. We therefore do not include ADI as an independent predictor in the main models; in descriptive statistics it functions as a global severity index for the defensive pole, no more.
+
+\subsection*{S1.3 DI does not reduce to social desirability}
+The Discrepancy Index (the gap between self-reported E and behavioral markers), in answer to the frequent question ``is it not just Lie?'', receives a negative answer: the contrast of the HIGH-DI vs.\ LOW-DI subgroups on the Lie scale yields $d = 0.00$ ($p = 0.99$). In the joint model $\mathrm{DI} \sim A + P + D + \mathrm{Lie} + \mathrm{ACE}$ ($R^2 = 0.41$) Lie contributes minimally; the principal drivers are $A$ ($+$), $P$ ($-$), $D$ ($+$). DI is a real structural pattern ``affective empathy that does not become effective,'' not an artifact of response style.
+
+\subsection*{S1.4 Octant map 8/16}
+A projection of the free-field categories onto octants (signs of the $z$-scores of E, P, D, A) fills only 8 of 16 possible octants; 8 octants remain empty. Two empty octants are of interest: $++++$ (all four scales simultaneously high)---structurally expected to be empty, since hi-E and hi-P make opposite demands on the architecture; and $+++-$ (hi-E, hi-P, hi-D, low-A)---the archetype ``befriends a psychopath / empathic counterpart,'' accounting for only $n = 3$ respondents (see §\ref{subsec:limitations_befriends}). The remaining six empty octants are theoretically possible but not represented configurations; filling them requires targeted sampling in wave 2.
+
+\subsection*{S1.5 ``Burning empath'' as a piecewise-linear trajectory}
+A nonlinear piecewise regression analysis of $\mathrm{ACE} \to E_{\mathrm{AF}}$ with an optimal knot at $80$ (on a 100-point ACE scale) shows two regimes: below 80, $\beta = -0.085$ ($p < 10^{-7}$); above 80, $\beta = -0.498$ ($p = 7 \times 10^{-4}$). $\Delta\mathrm{AIC} = -5.37$ against a purely linear model---an improvement exists but is modest. Across bins, the mean \EAF{} falls monotonically from $57.97$ (ACE $[0, 30]$) to $51.70$ (ACE $[75, 100]$). Substantive conclusion: a ``burning empath'' as a qualitatively separate trajectory is \emph{not isolated} in the data; the main effect of CA on \EAF{} is linear, and a nonlinear bend in the extreme ACE tail is present but does not change the overall picture.
+
+\subsection*{S1.6 Network centrality: ACE and F as central hubs}
+A partial-correlation network on $\{$E, P, D, A, ACE, F, EC$\}$ after GLasso regularization yields strength centrality (the sum of $|$partial $r|$): $\mathrm{ACE} = 3.43$, $F = 3.42$, $D = 3.11$, $\mathrm{EC} = 2.95$, $P = 2.60$. That is, early adverse history (ACE) and the ``F'' component inside the $D$ belt (affective dysregulation) are the most strongly connected nodes of the network. The bridge between the $D$ cluster and ACE passes through $F$. The network structure supports the causal conjecture of the paper ``ACE $\to$ F $\to$ D-cascade $\to$ \EAF{}'' at the level of conditional dependencies.
+
+\subsection*{S1.7 Empirical derivation of the archetypal architecture}
+\label{supp:empirical_archetypes}
+
+In the product layer of the instrument (\texttt{cluster} field in the exported data), each respondent is assigned an archetypal label from 12 categories (Trickster, Wanderer, Analyst, etc.). This decomposition is rule-based and decorative by design; its empirical reproducibility was not tested in the main paper. Here we address the question directly: \emph{what cluster structure is naturally supported by the data in the 6-factor space?}
+
+\paragraph{Method.} On standardized 6-factor composites (E, P, M, A, ID, CA; $N = 1465$), $k$-means clustering was performed at $k = 2$--$10$. For each $k$ we computed: silhouette index, total within-sum-of-squares, and bootstrap stability via the Adjusted Rand Index (50 iterations, random 50\,\% subsamples).
+
+\paragraph{Stability.} ARI as a function of $k$:
+
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+$k$ & ARI mean & Interpretation \\
+\midrule
+2 & 0.91 & very stable (P-pole vs.\ healthy) \\
+3 & 0.81 & stable \\
+\textbf{4} & \textbf{0.72} & \textbf{stable (recommended resolution)} \\
+5 & 0.62 & stable \\
+6 & 0.48 & borderline \\
+8 & 0.46 & borderline \\
+10 & 0.45 & borderline \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The $k = 4$ structure was selected as the optimal balance between stability (ARI~$> 0.70$) and interpretive resolution.
+
+\paragraph{Four empirically stable clusters.}
+
+\begin{center}
+\small
+\begin{tabular}{lrrrrrrr}
+\toprule
+Cluster & $n$ ($\%$) & $E$ & $P$ & $M$ & $A$ & ID & CA \\
+\midrule
+\textbf{The Witness} & 358 (24\%) & $+0.88$ & $-0.71$ & $-0.98$ & $+0.88$ & $-1.15$ & $-0.60$ \\
+\textbf{The Defended} & 313 (21\%) & $-1.19$ & $+1.03$ & $+1.07$ & $-0.98$ & $+1.05$ & $+0.53$ \\
+\textbf{The Wounded} & 453 (31\%) & $+0.09$ & $-0.52$ & $-0.11$ & $-0.41$ & $+0.35$ & $+0.65$ \\
+\textbf{The Operator} & 341 (23\%) & $+0.04$ & $+0.49$ & $+0.19$ & $+0.53$ & $-0.22$ & $-0.73$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+All four centroids read as theoretically meaningful DEIC configurations: \emph{The Witness} combines the baseline empath and part of the integrated survivor (§\ref{subsec:integrated}); \emph{The Defended} corresponds to the secondary-psychopathy architecture (§\ref{subsec:primary_secondary}) with an active P narrative, defensive masking, and hi-CA + hi-ID; \emph{The Wounded} is a canonical trauma-marked profile without a P overlay; \emph{The Operator} is a functional non-traumatized profile with a constitutional P narrative and preserved witnessing.
+
+\paragraph{Comparison with the 12-archetype product layer.} For each of the 12 product archetypes, the share of respondents falling into a single dominant empirical cluster (k = 4) was computed. None of the 12 reaches a $\geq 70$\,\% consistency threshold:
+
+\begin{center}
+\small
+\begin{tabular}{lrr}
+\toprule
+Product archetype & $n$ & Share in dominant emp-cluster \\
+\midrule
+Warrior & 18 & 50.0\,\% (small $n$) \\
+Analyst & 289 & 33.2\,\% \\
+Wanderer & 362 & 35.0\,\% \\
+Trickster & 377 & 28.9\,\% \\
+Shaman & 37 & 48.6\,\% \\
+\textit{(all others)} & --- & $< 50$\,\% \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Each product archetype is distributed nearly uniformly across all four empirical clusters. The archetype labeling, in its current form, \emph{does not reproduce} the observed data structure and should be interpreted as a decorative narrative shorthand for product feedback, not as an empirically validated typology.
+
+\paragraph{Implication for wave 2 and for public framing.} For a replication-ready cluster system, the instrument should switch from rule-based 12-archetype labeling to a data-driven 4-cluster scheme (Witness / Defended / Wounded / Operator) with explicit communication to the respondent: \emph{a cluster is a statistically reproducible region of the continuous 6-factor space, not a categorical personality type; a respondent may shift between clusters over time as their architecture changes}. This reformulation defuses the D\&D-class-style identity-typing critique to which the current labeling is exposed. Empirical cluster definitions, criteria, centroids, and caveats are formalized in \texttt{psychometrics.json:empirical\_clusters} (see also \texttt{empirical\_archetypes\_summary.json} in the supplementary materials).
