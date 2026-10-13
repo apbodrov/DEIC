@@ -25,7 +25,7 @@ import numpy as np
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 
-FRESH = '/sessions/tender-fervent-einstein/mnt/psyco/articles/main_article/analysis_output/fresh_analysis'
+FRESH = '<DATA_DIR>/articles/main_article/analysis_output/fresh_analysis'
 
 # ----- Load -----
 fscores6 = pd.read_csv(f'{FRESH}/latent_scores_6factor.csv', index_col='participant_id')

@@ -20,7 +20,7 @@ from sklearn.preprocessing import StandardScaler
 from scipy.cluster.hierarchy import linkage, fcluster
 from collections import Counter
 
-DATA = '/sessions/tender-fervent-einstein/mnt/psyco/articles/main_article/data/anonymized/deic_dataset_scores.csv'
+DATA = '<DATA_DIR>/articles/main_article/data/anonymized/deic_dataset_scores.csv'
 df = pd.read_csv(DATA)
 print(f'N: {len(df)}')
 
@@ -124,6 +124,6 @@ out = {
     'k4_sizes':        {f'cluster_{i}': int((km.labels_ == i).sum()) for i in range(BEST_K)},
     'n':               int(len(Xz)),
 }
-with open('/sessions/tender-fervent-einstein/empirical_archetypes_summary.json', 'w') as f:
+with open('<SESSION_DIR>/empirical_archetypes_summary.json', 'w') as f:
     json.dump(out, f, ensure_ascii=False, indent=2)
 print('\nSaved to empirical_archetypes_summary.json')

@@ -14,7 +14,7 @@ from scipy import stats
 from pathlib import Path
 
 # --- Load raw Firebase for scores + sessionQuestions (CASE answers live here) ---
-with open('/sessions/tender-fervent-einstein/mnt/psyco/.local_archive/backup/results_backup_2026-04-15T21-36-30-182Z.json') as f:
+with open('<DATA_DIR>/.local_archive/backup/results_backup_2026-04-15T21-36-30-182Z.json') as f:
     raw = json.load(f)
 
 rows = []
@@ -44,7 +44,7 @@ for c in ['E','P','M','A','ID','CA','D','S']:
 # ======================================================================
 # Key CASE scenarios with canonical options (reconstructed from questions.json)
 # ======================================================================
-with open('/sessions/tender-fervent-einstein/mnt/psyco/src/data/questions.json') as f:
+with open('<DATA_DIR>/src/data/questions.json') as f:
     qj = json.load(f)
 
 case_defs = {}
@@ -81,7 +81,7 @@ for case_id, info in case_defs.items():
 res = pd.DataFrame(results)
 pivot = res.pivot_table(index=['case','option','n'], columns='factor', values='mean_z').reset_index()
 pivot = pivot[['case','option','n','E','P','A','ID','CA','D','M']]
-out = '/sessions/tender-fervent-einstein/case_factor_profiles.csv'
+out = '<SESSION_DIR>/case_factor_profiles.csv'
 pivot.to_csv(out, index=False, encoding='utf-8')
 print(f'\nSaved per-option profiles to {out}')
 
@@ -133,5 +133,5 @@ for case_id, markers in P_OPTIONS.items():
         print(f'  {f:3s}: Psig={m_p:+.2f}, Other={m_o:+.2f}, Δ={d:+.2f}, p={p:.3g} {sig}')
 
 # Save full results
-df.to_csv('/sessions/tender-fervent-einstein/case_merged.csv', index=False)
+df.to_csv('<SESSION_DIR>/case_merged.csv', index=False)
 print('\nSaved merged CASE+DEIC to case_merged.csv')

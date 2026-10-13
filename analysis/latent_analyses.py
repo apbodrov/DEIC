@@ -17,10 +17,10 @@ from scipy import stats
 import warnings
 warnings.filterwarnings("ignore")
 
-FRESH = '/sessions/tender-fervent-einstein/mnt/psyco/articles/main_article/analysis_output/fresh_analysis'
+FRESH = '<DATA_DIR>/articles/main_article/analysis_output/fresh_analysis'
 
 # ---- Rebuild sample B with refined structure ----
-with open('/sessions/tender-fervent-einstein/mnt/psyco/src/data/questions.json') as f:
+with open('<DATA_DIR>/src/data/questions.json') as f:
     Q = json.load(f)['questions']
 qmeta = pd.DataFrame([{
     'question_id': q['id'],
