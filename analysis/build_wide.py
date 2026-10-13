@@ -9,8 +9,8 @@ Step 1: Build wide item × participant matrix.
 import pandas as pd
 import numpy as np
 
-items = pd.read_csv('/sessions/tender-fervent-einstein/mnt/psyco/articles/main_article/data/anonymized/questionnaire_items.csv')
-answers = pd.read_csv('/sessions/tender-fervent-einstein/mnt/psyco/articles/main_article/data/anonymized/deic_dataset_answers_long.csv')
+items = pd.read_csv('<DATA_DIR>/articles/main_article/data/anonymized/questionnaire_items.csv')
+answers = pd.read_csv('<DATA_DIR>/articles/main_article/data/anonymized/deic_dataset_answers_long.csv')
 
 # Filter: drop сценарий items, Control, keep ACE and Lie
 ok_items = items[~items['category'].isin(['сценарий', 'контроль'])].copy()
@@ -53,10 +53,10 @@ wide_f = wide[keep_rows]
 print(f"After ≤10% NaN filter: N={len(wide_f)}")
 
 # Save
-wide_f.to_csv('/sessions/tender-fervent-einstein/mnt/psyco/articles/main_article/analysis_output/fresh_analysis/wide_items.csv')
+wide_f.to_csv('<DATA_DIR>/articles/main_article/analysis_output/fresh_analysis/wide_items.csv')
 print("Saved wide_items.csv")
 
 # Also save item→scale mapping for later use
 ok_items[['question_id','primary_scale','weight_primary','category']].to_csv(
-    '/sessions/tender-fervent-einstein/mnt/psyco/articles/main_article/analysis_output/fresh_analysis/item_meta.csv', index=False)
+    '<DATA_DIR>/articles/main_article/analysis_output/fresh_analysis/item_meta.csv', index=False)
 print("Saved item_meta.csv")

@@ -33,8 +33,8 @@ import pandas as pd
 import pymc as pm
 import arviz as az
 
-FRESH = '/sessions/tender-fervent-einstein/mnt/psyco/articles/main_article/analysis_output/fresh_analysis'
-DATA = '/sessions/tender-fervent-einstein/mnt/psyco/articles/main_article/data/anonymized/deic_dataset_scores.csv'
+FRESH = '<DATA_DIR>/articles/main_article/analysis_output/fresh_analysis'
+DATA = '<DATA_DIR>/articles/main_article/data/anonymized/deic_dataset_scores.csv'
 
 # ----- Load, align with Tier 4 (n=710) -----
 fscores6 = pd.read_csv(f'{FRESH}/latent_scores_6factor.csv', index_col='participant_id')
